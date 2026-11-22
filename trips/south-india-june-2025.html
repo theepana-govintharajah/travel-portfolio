@@ -8,7 +8,7 @@
   <title>South India | June 2025 | Theepana’s Travel Journal</title>
   <link rel="icon" href="../assets/compass.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/styles.css">
-  <script src="../assets/site.js" defer></script>
+  <style>#place-filters { margin-top: 14px; }</style>
 </head>
 <body>
 
@@ -31,10 +31,17 @@
     <p class="detail-country"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>India</p>
   </div>
   <section aria-labelledby="gallery-title">
-    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p>96 photos</p></div>
+    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p id="photo-count" aria-live="polite" aria-atomic="true">96 photos</p></div>
     
+    <div id="place-filters" class="filters" role="group" aria-label="Filter photos by destination" hidden>
+      <button type="button" data-place="all" aria-pressed="true" aria-controls="photos">All</button>
+      <button type="button" data-place="bangalore" aria-pressed="false" aria-controls="photos">Bangalore</button>
+      <button type="button" data-place="mysore" aria-pressed="false" aria-controls="photos">Mysore</button>
+      <button type="button" data-place="tirumala" aria-pressed="false" aria-controls="photos">Tirumala</button>
+      <button type="button" data-place="tamil-nadu" aria-pressed="false" aria-controls="photos">Tamil Nadu</button>
+    </div>
     <div class="gallery" id="photos">
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Banglore%20-%20Wonderla%201.jpeg" data-gallery aria-label="Enlarge photo: Wonderla, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Banglore%20-%20Wonderla%201.jpeg" alt="Wonderla, Bangalore" fetchpriority="high" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -42,7 +49,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">01</span>Wonderla, Bangalore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Banglore%20-%20Wonderla%202.jpeg" data-gallery aria-label="Enlarge photo: Wonderla, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Banglore%20-%20Wonderla%202.jpeg" alt="Wonderla, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -50,7 +57,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">02</span>Wonderla, Bangalore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Banglore%20-%20Wonderla%203.jpeg" data-gallery aria-label="Enlarge photo: Wonderla, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Banglore%20-%20Wonderla%203.jpeg" alt="Wonderla, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -58,15 +65,15 @@
   <figcaption><span class="plate-number" aria-hidden="true">03</span>Wonderla, Bangalore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore-%20kodilingeshwara.jpeg" data-gallery aria-label="Enlarge photo: Kodilingeshwara, Bangalore">
-    <img src="../photos/india/jun-2025/Bangalore/Bangalore-%20kodilingeshwara.jpeg" alt="Kodilingeshwara, Bangalore" loading="lazy" decoding="async">
+<figure data-place="bangalore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore-%20kodilingeshwara.jpeg" data-gallery aria-label="Enlarge photo: Kotilingeshwara Temple, Kammasandra, Kolar">
+    <img src="../photos/india/jun-2025/Bangalore/Bangalore-%20kodilingeshwara.jpeg" alt="Kotilingeshwara Temple, Kammasandra, Kolar" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">04</span>Kodilingeshwara, Bangalore</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">04</span>Kotilingeshwara Temple, Kammasandra, Kolar</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Visvesvaraya%20Industrial%20%26%20Technological%20Museum.jpeg" data-gallery aria-label="Enlarge photo: Visvesvaraya Industrial and Technological Museum, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Visvesvaraya%20Industrial%20%26%20Technological%20Museum.jpeg" alt="Visvesvaraya Industrial and Technological Museum, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -74,7 +81,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">05</span>Visvesvaraya Industrial and Technological Museum, Bangalore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%201.jpeg" data-gallery aria-label="Enlarge photo: Aquarium Paradise, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%201.jpeg" alt="Aquarium Paradise, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -82,7 +89,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">06</span>Aquarium Paradise, Bangalore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%202.jpeg" data-gallery aria-label="Enlarge photo: Aquarium Paradise, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%202.jpeg" alt="Aquarium Paradise, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -90,7 +97,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">07</span>Aquarium Paradise, Bangalore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%203.jpeg" data-gallery aria-label="Enlarge photo: Aquarium Paradise, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%203.jpeg" alt="Aquarium Paradise, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -98,7 +105,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">08</span>Aquarium Paradise, Bangalore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%204.jpeg" data-gallery aria-label="Enlarge photo: Aquarium Paradise, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%204.jpeg" alt="Aquarium Paradise, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -106,7 +113,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">09</span>Aquarium Paradise, Bangalore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%205.jpeg" data-gallery aria-label="Enlarge photo: Aquarium Paradise, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%205.jpeg" alt="Aquarium Paradise, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -114,7 +121,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">10</span>Aquarium Paradise, Bangalore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%206.jpeg" data-gallery aria-label="Enlarge photo: Aquarium Paradise, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%206.jpeg" alt="Aquarium Paradise, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -122,7 +129,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">11</span>Aquarium Paradise, Bangalore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="bangalore">
   <a class="gallery-image" href="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%20-%20Mermaid%20show.jpeg" data-gallery aria-label="Enlarge photo: Mermaid show at Aquarium Paradise, Bangalore">
     <img src="../photos/india/jun-2025/Bangalore/Bangalore%20-%20Aquarium%20paradise%20-%20Mermaid%20show.jpeg" alt="Mermaid show at Aquarium Paradise, Bangalore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -130,31 +137,31 @@
   <figcaption><span class="plate-number" aria-hidden="true">12</span>Mermaid show at Aquarium Paradise, Bangalore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%201.jpeg" data-gallery aria-label="Enlarge photo: Brindavan Gardens, Mysore">
-    <img src="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%201.jpeg" alt="Brindavan Gardens, Mysore" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%201.jpeg" data-gallery aria-label="Enlarge photo: Brindavan Gardens, near Mysore">
+    <img src="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%201.jpeg" alt="Brindavan Gardens, near Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">13</span>Brindavan Gardens, Mysore</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">13</span>Brindavan Gardens, near Mysore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%202.jpeg" data-gallery aria-label="Enlarge photo: Brindavan Gardens, Mysore">
-    <img src="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%202.jpeg" alt="Brindavan Gardens, Mysore" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%202.jpeg" data-gallery aria-label="Enlarge photo: Brindavan Gardens, near Mysore">
+    <img src="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%202.jpeg" alt="Brindavan Gardens, near Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">14</span>Brindavan Gardens, Mysore</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">14</span>Brindavan Gardens, near Mysore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%203.jpeg" data-gallery aria-label="Enlarge photo: Brindavan Gardens, Mysore">
-    <img src="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%203.jpeg" alt="Brindavan Gardens, Mysore" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%203.jpeg" data-gallery aria-label="Enlarge photo: Brindavan Gardens, near Mysore">
+    <img src="../photos/india/jun-2025/Mysore/Brindavan%20Gardens%203.jpeg" alt="Brindavan Gardens, near Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">15</span>Brindavan Gardens, Mysore</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">15</span>Brindavan Gardens, near Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%201.jpeg" data-gallery aria-label="Enlarge photo: Snow World at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%201.jpeg" alt="Snow World at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -162,7 +169,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">16</span>Snow World at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%202.jpeg" data-gallery aria-label="Enlarge photo: Snow World at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%202.jpeg" alt="Snow World at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -170,7 +177,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">17</span>Snow World at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%203.jpeg" data-gallery aria-label="Enlarge photo: Snow World at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%203.jpeg" alt="Snow World at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -178,7 +185,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">18</span>Snow World at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%204.jpeg" data-gallery aria-label="Enlarge photo: Snow World at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%204.jpeg" alt="Snow World at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -186,7 +193,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">19</span>Snow World at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%205.jpeg" data-gallery aria-label="Enlarge photo: Snow World at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Snow%20world%205.jpeg" alt="Snow World at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -194,7 +201,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">20</span>Snow World at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%201.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%201.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -202,7 +209,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">21</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%202.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%202.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -210,7 +217,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">22</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%203.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%203.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -218,7 +225,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">23</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%204.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%204.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -226,7 +233,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">24</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%205.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%205.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -234,7 +241,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">25</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%206.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%206.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -242,7 +249,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">26</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%207.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%207.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -250,7 +257,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">27</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%208.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%208.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -258,7 +265,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">28</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%209.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%209.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -266,7 +273,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">29</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2010.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2010.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -274,7 +281,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">30</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2011.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2011.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -282,7 +289,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">31</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2012.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2012.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -290,7 +297,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">32</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2013.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2013.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -298,7 +305,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">33</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2014.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2014.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -306,7 +313,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">34</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2015.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2015.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -314,7 +321,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">35</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
+<figure data-place="mysore">
   <a class="gallery-image" href="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2016.jpeg" data-gallery aria-label="Enlarge photo: Upside Down House at GRS Fantasy Park, Mysore">
     <img src="../photos/india/jun-2025/Mysore/GRS%20Fantacy%20Park%20-%20Upside%20Down%2016.jpeg" alt="Upside Down House at GRS Fantasy Park, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -322,484 +329,484 @@
   <figcaption><span class="plate-number" aria-hidden="true">36</span>Upside Down House at GRS Fantasy Park, Mysore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Mysuru%20Palace%201.jpeg" data-gallery aria-label="Enlarge photo: Mysuru Palace">
-    <img src="../photos/india/jun-2025/Mysore/Mysuru%20Palace%201.jpeg" alt="Mysuru Palace" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Mysuru%20Palace%201.jpeg" data-gallery aria-label="Enlarge photo: Mysuru Palace, Mysore">
+    <img src="../photos/india/jun-2025/Mysore/Mysuru%20Palace%201.jpeg" alt="Mysuru Palace, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">37</span>Mysuru Palace</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">37</span>Mysuru Palace, Mysore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Mysuru%20Palace%202.jpeg" data-gallery aria-label="Enlarge photo: Mysuru Palace">
-    <img src="../photos/india/jun-2025/Mysore/Mysuru%20Palace%202.jpeg" alt="Mysuru Palace" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Mysuru%20Palace%202.jpeg" data-gallery aria-label="Enlarge photo: Mysuru Palace, Mysore">
+    <img src="../photos/india/jun-2025/Mysore/Mysuru%20Palace%202.jpeg" alt="Mysuru Palace, Mysore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">38</span>Mysuru Palace</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">38</span>Mysuru Palace, Mysore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%201.jpeg" data-gallery aria-label="Enlarge photo: Somanathapura Temple">
-    <img src="../photos/india/jun-2025/Mysore/Somanathapura%201.jpeg" alt="Somanathapura Temple" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%201.jpeg" data-gallery aria-label="Enlarge photo: Keshava Temple, Somanathapura, Karnataka">
+    <img src="../photos/india/jun-2025/Mysore/Somanathapura%201.jpeg" alt="Keshava Temple, Somanathapura, Karnataka" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">39</span>Somanathapura Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">39</span>Keshava Temple, Somanathapura, Karnataka</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%202.jpeg" data-gallery aria-label="Enlarge photo: Somanathapura Temple">
-    <img src="../photos/india/jun-2025/Mysore/Somanathapura%202.jpeg" alt="Somanathapura Temple" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%202.jpeg" data-gallery aria-label="Enlarge photo: Keshava Temple, Somanathapura, Karnataka">
+    <img src="../photos/india/jun-2025/Mysore/Somanathapura%202.jpeg" alt="Keshava Temple, Somanathapura, Karnataka" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">40</span>Somanathapura Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">40</span>Keshava Temple, Somanathapura, Karnataka</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%203.jpeg" data-gallery aria-label="Enlarge photo: Somanathapura Temple">
-    <img src="../photos/india/jun-2025/Mysore/Somanathapura%203.jpeg" alt="Somanathapura Temple" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%203.jpeg" data-gallery aria-label="Enlarge photo: Keshava Temple, Somanathapura, Karnataka">
+    <img src="../photos/india/jun-2025/Mysore/Somanathapura%203.jpeg" alt="Keshava Temple, Somanathapura, Karnataka" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">41</span>Somanathapura Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">41</span>Keshava Temple, Somanathapura, Karnataka</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%204.jpeg" data-gallery aria-label="Enlarge photo: Somanathapura Temple">
-    <img src="../photos/india/jun-2025/Mysore/Somanathapura%204.jpeg" alt="Somanathapura Temple" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%204.jpeg" data-gallery aria-label="Enlarge photo: Keshava Temple, Somanathapura, Karnataka">
+    <img src="../photos/india/jun-2025/Mysore/Somanathapura%204.jpeg" alt="Keshava Temple, Somanathapura, Karnataka" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">42</span>Somanathapura Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">42</span>Keshava Temple, Somanathapura, Karnataka</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%205.jpeg" data-gallery aria-label="Enlarge photo: Somanathapura Temple">
-    <img src="../photos/india/jun-2025/Mysore/Somanathapura%205.jpeg" alt="Somanathapura Temple" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%205.jpeg" data-gallery aria-label="Enlarge photo: Keshava Temple, Somanathapura, Karnataka">
+    <img src="../photos/india/jun-2025/Mysore/Somanathapura%205.jpeg" alt="Keshava Temple, Somanathapura, Karnataka" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">43</span>Somanathapura Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">43</span>Keshava Temple, Somanathapura, Karnataka</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%206.jpeg" data-gallery aria-label="Enlarge photo: Somanathapura Temple">
-    <img src="../photos/india/jun-2025/Mysore/Somanathapura%206.jpeg" alt="Somanathapura Temple" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%206.jpeg" data-gallery aria-label="Enlarge photo: Keshava Temple, Somanathapura, Karnataka">
+    <img src="../photos/india/jun-2025/Mysore/Somanathapura%206.jpeg" alt="Keshava Temple, Somanathapura, Karnataka" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">44</span>Somanathapura Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">44</span>Keshava Temple, Somanathapura, Karnataka</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%207.jpeg" data-gallery aria-label="Enlarge photo: Somanathapura Temple">
-    <img src="../photos/india/jun-2025/Mysore/Somanathapura%207.jpeg" alt="Somanathapura Temple" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/Somanathapura%207.jpeg" data-gallery aria-label="Enlarge photo: Keshava Temple, Somanathapura, Karnataka">
+    <img src="../photos/india/jun-2025/Mysore/Somanathapura%207.jpeg" alt="Keshava Temple, Somanathapura, Karnataka" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">45</span>Somanathapura Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">45</span>Keshava Temple, Somanathapura, Karnataka</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/srikanteshwara%20temple%20nanjangud%201.jpeg" data-gallery aria-label="Enlarge photo: Srikanteshwara Temple, Nanjangud">
-    <img src="../photos/india/jun-2025/Mysore/srikanteshwara%20temple%20nanjangud%201.jpeg" alt="Srikanteshwara Temple, Nanjangud" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/srikanteshwara%20temple%20nanjangud%201.jpeg" data-gallery aria-label="Enlarge photo: Sri Srikanteshwara Temple, Nanjangud, Karnataka">
+    <img src="../photos/india/jun-2025/Mysore/srikanteshwara%20temple%20nanjangud%201.jpeg" alt="Sri Srikanteshwara Temple, Nanjangud, Karnataka" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">46</span>Srikanteshwara Temple, Nanjangud</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">46</span>Sri Srikanteshwara Temple, Nanjangud, Karnataka</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/srikanteshwara%20temple%20nanjangud%202.jpeg" data-gallery aria-label="Enlarge photo: Srikanteshwara Temple, Nanjangud">
-    <img src="../photos/india/jun-2025/Mysore/srikanteshwara%20temple%20nanjangud%202.jpeg" alt="Srikanteshwara Temple, Nanjangud" loading="lazy" decoding="async">
+<figure data-place="mysore">
+  <a class="gallery-image" href="../photos/india/jun-2025/Mysore/srikanteshwara%20temple%20nanjangud%202.jpeg" data-gallery aria-label="Enlarge photo: Sri Srikanteshwara Temple, Nanjangud, Karnataka">
+    <img src="../photos/india/jun-2025/Mysore/srikanteshwara%20temple%20nanjangud%202.jpeg" alt="Sri Srikanteshwara Temple, Nanjangud, Karnataka" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">47</span>Srikanteshwara Temple, Nanjangud</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">47</span>Sri Srikanteshwara Temple, Nanjangud, Karnataka</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%201.jpeg" data-gallery aria-label="Enlarge photo: Tirumala Tirupati">
-    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%201.jpeg" alt="Tirumala Tirupati" loading="lazy" decoding="async">
+<figure data-place="tirumala">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%201.jpeg" data-gallery aria-label="Enlarge photo: Tirumala, near Tirupati, Andhra Pradesh">
+    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%201.jpeg" alt="Tirumala, near Tirupati, Andhra Pradesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">48</span>Tirumala Tirupati</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">48</span>Tirumala, near Tirupati, Andhra Pradesh</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%202.jpeg" data-gallery aria-label="Enlarge photo: Tirumala Tirupati">
-    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%202.jpeg" alt="Tirumala Tirupati" loading="lazy" decoding="async">
+<figure data-place="tirumala">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%202.jpeg" data-gallery aria-label="Enlarge photo: Tirumala, near Tirupati, Andhra Pradesh">
+    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%202.jpeg" alt="Tirumala, near Tirupati, Andhra Pradesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">49</span>Tirumala Tirupati</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">49</span>Tirumala, near Tirupati, Andhra Pradesh</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%203.jpeg" data-gallery aria-label="Enlarge photo: Tirumala Tirupati">
-    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%203.jpeg" alt="Tirumala Tirupati" loading="lazy" decoding="async">
+<figure data-place="tirumala">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%203.jpeg" data-gallery aria-label="Enlarge photo: Tirumala, near Tirupati, Andhra Pradesh">
+    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%203.jpeg" alt="Tirumala, near Tirupati, Andhra Pradesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">50</span>Tirumala Tirupati</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">50</span>Tirumala, near Tirupati, Andhra Pradesh</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%204.jpeg" data-gallery aria-label="Enlarge photo: Tirumala Tirupati">
-    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%204.jpeg" alt="Tirumala Tirupati" loading="lazy" decoding="async">
+<figure data-place="tirumala">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%204.jpeg" data-gallery aria-label="Enlarge photo: Tirumala, near Tirupati, Andhra Pradesh">
+    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%204.jpeg" alt="Tirumala, near Tirupati, Andhra Pradesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">51</span>Tirumala Tirupati</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">51</span>Tirumala, near Tirupati, Andhra Pradesh</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%205.jpeg" data-gallery aria-label="Enlarge photo: Tirumala Tirupati">
-    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%205.jpeg" alt="Tirumala Tirupati" loading="lazy" decoding="async">
+<figure data-place="tirumala">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%205.jpeg" data-gallery aria-label="Enlarge photo: Tirumala, near Tirupati, Andhra Pradesh">
+    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%205.jpeg" alt="Tirumala, near Tirupati, Andhra Pradesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">52</span>Tirumala Tirupati</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">52</span>Tirumala, near Tirupati, Andhra Pradesh</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%206.jpeg" data-gallery aria-label="Enlarge photo: Tirumala Tirupati">
-    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%206.jpeg" alt="Tirumala Tirupati" loading="lazy" decoding="async">
+<figure data-place="tirumala">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%206.jpeg" data-gallery aria-label="Enlarge photo: Tirumala, near Tirupati, Andhra Pradesh">
+    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%206.jpeg" alt="Tirumala, near Tirupati, Andhra Pradesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">53</span>Tirumala Tirupati</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">53</span>Tirumala, near Tirupati, Andhra Pradesh</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%207.jpeg" data-gallery aria-label="Enlarge photo: Tirumala Tirupati">
-    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%207.jpeg" alt="Tirumala Tirupati" loading="lazy" decoding="async">
+<figure data-place="tirumala">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%207.jpeg" data-gallery aria-label="Enlarge photo: Tirumala, near Tirupati, Andhra Pradesh">
+    <img src="../photos/india/jun-2025/Tirupati/Tirumala%20Tirupati%207.jpeg" alt="Tirumala, near Tirupati, Andhra Pradesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">54</span>Tirumala Tirupati</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">54</span>Tirumala, near Tirupati, Andhra Pradesh</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Adiyogi%20Shiva%20Statue%201.jpeg" data-gallery aria-label="Enlarge photo: Adiyogi Shiva Statue">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Adiyogi%20Shiva%20Statue%201.jpeg" alt="Adiyogi Shiva Statue" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Adiyogi%20Shiva%20Statue%201.jpeg" data-gallery aria-label="Enlarge photo: Adiyogi Shiva Statue, Isha Yoga Center, Coimbatore">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Adiyogi%20Shiva%20Statue%201.jpeg" alt="Adiyogi Shiva Statue, Isha Yoga Center, Coimbatore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">55</span>Adiyogi Shiva Statue</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">55</span>Adiyogi Shiva Statue, Isha Yoga Center, Coimbatore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Chidambaram.jpeg" data-gallery aria-label="Enlarge photo: Chidambaram">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Chidambaram.jpeg" alt="Chidambaram" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Chidambaram.jpeg" data-gallery aria-label="Enlarge photo: Chidambaram, Cuddalore district">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Chidambaram.jpeg" alt="Chidambaram, Cuddalore district" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">56</span>Chidambaram</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">56</span>Chidambaram, Cuddalore district</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%201.jpeg" data-gallery aria-label="Enlarge photo: Dhanushkodi - Adam's Bridge">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%201.jpeg" alt="Dhanushkodi - Adam's Bridge" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%201.jpeg" data-gallery aria-label="Enlarge photo: Adam’s Bridge, Dhanushkodi, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%201.jpeg" alt="Adam’s Bridge, Dhanushkodi, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">57</span>Dhanushkodi - Adam's Bridge</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">57</span>Adam’s Bridge, Dhanushkodi, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%202.jpeg" data-gallery aria-label="Enlarge photo: Dhanushkodi - Adam's Bridge">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%202.jpeg" alt="Dhanushkodi - Adam's Bridge" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%202.jpeg" data-gallery aria-label="Enlarge photo: Adam’s Bridge, Dhanushkodi, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%202.jpeg" alt="Adam’s Bridge, Dhanushkodi, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">58</span>Dhanushkodi - Adam's Bridge</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">58</span>Adam’s Bridge, Dhanushkodi, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%203.jpeg" data-gallery aria-label="Enlarge photo: Dhanushkodi - Adam's Bridge">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%203.jpeg" alt="Dhanushkodi - Adam's Bridge" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%203.jpeg" data-gallery aria-label="Enlarge photo: Adam’s Bridge, Dhanushkodi, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%20-%20Adam%27s%20Bridge%203.jpeg" alt="Adam’s Bridge, Dhanushkodi, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">59</span>Dhanushkodi - Adam's Bridge</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">59</span>Adam’s Bridge, Dhanushkodi, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%201.jpeg" data-gallery aria-label="Enlarge photo: Dhanushkodi">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%201.jpeg" alt="Dhanushkodi" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%201.jpeg" data-gallery aria-label="Enlarge photo: Dhanushkodi, near Rameswaram">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%201.jpeg" alt="Dhanushkodi, near Rameswaram" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">60</span>Dhanushkodi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">60</span>Dhanushkodi, near Rameswaram</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%202.jpeg" data-gallery aria-label="Enlarge photo: Dhanushkodi">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%202.jpeg" alt="Dhanushkodi" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%202.jpeg" data-gallery aria-label="Enlarge photo: Dhanushkodi, near Rameswaram">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%202.jpeg" alt="Dhanushkodi, near Rameswaram" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">61</span>Dhanushkodi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">61</span>Dhanushkodi, near Rameswaram</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%203.jpeg" data-gallery aria-label="Enlarge photo: Dhanushkodi">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%203.jpeg" alt="Dhanushkodi" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%203.jpeg" data-gallery aria-label="Enlarge photo: Dhanushkodi, near Rameswaram">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Dhanushkodi%203.jpeg" alt="Dhanushkodi, near Rameswaram" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">62</span>Dhanushkodi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">62</span>Dhanushkodi, near Rameswaram</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kailasanathar%20Temple%201.jpeg" data-gallery aria-label="Enlarge photo: Kanchi Kailasanathar Temple">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kailasanathar%20Temple%201.jpeg" alt="Kanchi Kailasanathar Temple" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kailasanathar%20Temple%201.jpeg" data-gallery aria-label="Enlarge photo: Kailasanathar Temple, Kanchipuram">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kailasanathar%20Temple%201.jpeg" alt="Kailasanathar Temple, Kanchipuram" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">63</span>Kanchi Kailasanathar Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">63</span>Kailasanathar Temple, Kanchipuram</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kailasanathar%20Temple%202.jpeg" data-gallery aria-label="Enlarge photo: Kanchi Kailasanathar Temple">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kailasanathar%20Temple%202.jpeg" alt="Kanchi Kailasanathar Temple" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kailasanathar%20Temple%202.jpeg" data-gallery aria-label="Enlarge photo: Kailasanathar Temple, Kanchipuram">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kailasanathar%20Temple%202.jpeg" alt="Kailasanathar Temple, Kanchipuram" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">64</span>Kanchi Kailasanathar Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">64</span>Kailasanathar Temple, Kanchipuram</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%201.jpeg" data-gallery aria-label="Enlarge photo: Kanchi Kamakshi">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%201.jpeg" alt="Kanchi Kamakshi" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%201.jpeg" data-gallery aria-label="Enlarge photo: Kamakshi Amman Temple, Kanchipuram">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%201.jpeg" alt="Kamakshi Amman Temple, Kanchipuram" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">65</span>Kanchi Kamakshi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">65</span>Kamakshi Amman Temple, Kanchipuram</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%202.jpeg" data-gallery aria-label="Enlarge photo: Kanchi Kamakshi">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%202.jpeg" alt="Kanchi Kamakshi" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%202.jpeg" data-gallery aria-label="Enlarge photo: Kamakshi Amman Temple, Kanchipuram">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%202.jpeg" alt="Kamakshi Amman Temple, Kanchipuram" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">66</span>Kanchi Kamakshi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">66</span>Kamakshi Amman Temple, Kanchipuram</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%203.jpeg" data-gallery aria-label="Enlarge photo: Kanchi Kamakshi">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%203.jpeg" alt="Kanchi Kamakshi" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%203.jpeg" data-gallery aria-label="Enlarge photo: Kamakshi Amman Temple, Kanchipuram">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanchi%20Kamakshi%203.jpeg" alt="Kamakshi Amman Temple, Kanchipuram" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">67</span>Kanchi Kamakshi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">67</span>Kamakshi Amman Temple, Kanchipuram</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanyakumari%201.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanyakumari%201.jpeg" alt="Kanyakumari" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Kanyakumari%201.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Kanyakumari%201.jpeg" alt="Kanyakumari, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">68</span>Kanyakumari</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">68</span>Kanyakumari, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%202.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%202.jpeg" alt="Kanyakumari" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%202.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%202.jpeg" alt="Kanyakumari, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">69</span>Kanyakumari</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">69</span>Kanyakumari, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%203.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%203.jpeg" alt="Kanyakumari" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%203.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%203.jpeg" alt="Kanyakumari, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">70</span>Kanyakumari</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">70</span>Kanyakumari, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%204.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%204.jpeg" alt="Kanyakumari" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%204.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%204.jpeg" alt="Kanyakumari, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">71</span>Kanyakumari</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">71</span>Kanyakumari, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%205.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%205.jpeg" alt="Kanyakumari" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%205.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%205.jpeg" alt="Kanyakumari, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">72</span>Kanyakumari</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">72</span>Kanyakumari, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%206.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%206.jpeg" alt="Kanyakumari" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%206.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%206.jpeg" alt="Kanyakumari, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">73</span>Kanyakumari</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">73</span>Kanyakumari, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%207.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%207.jpeg" alt="Kanyakumari" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%207.jpeg" data-gallery aria-label="Enlarge photo: Kanyakumari, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/kanyakumari%207.jpeg" alt="Kanyakumari, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">74</span>Kanyakumari</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">74</span>Kanyakumari, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Madurai%20Meenakshi.jpeg" data-gallery aria-label="Enlarge photo: Madurai Meenakshi">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Madurai%20Meenakshi.jpeg" alt="Madurai Meenakshi" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Madurai%20Meenakshi.jpeg" data-gallery aria-label="Enlarge photo: Meenakshi Amman Temple, Madurai">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Madurai%20Meenakshi.jpeg" alt="Meenakshi Amman Temple, Madurai" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">75</span>Madurai Meenakshi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">75</span>Meenakshi Amman Temple, Madurai</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Marudhamalai%20Murugan%20Temple%201.jpeg" data-gallery aria-label="Enlarge photo: Marudhamalai Murugan Temple">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Marudhamalai%20Murugan%20Temple%201.jpeg" alt="Marudhamalai Murugan Temple" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Marudhamalai%20Murugan%20Temple%201.jpeg" data-gallery aria-label="Enlarge photo: Marudhamalai Murugan Temple, Coimbatore">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Marudhamalai%20Murugan%20Temple%201.jpeg" alt="Marudhamalai Murugan Temple, Coimbatore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">76</span>Marudhamalai Murugan Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">76</span>Marudhamalai Murugan Temple, Coimbatore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Marudhamalai%20Murugan%20Temple%202.jpeg" data-gallery aria-label="Enlarge photo: Marudhamalai Murugan Temple">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Marudhamalai%20Murugan%20Temple%202.jpeg" alt="Marudhamalai Murugan Temple" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Marudhamalai%20Murugan%20Temple%202.jpeg" data-gallery aria-label="Enlarge photo: Marudhamalai Murugan Temple, Coimbatore">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Marudhamalai%20Murugan%20Temple%202.jpeg" alt="Marudhamalai Murugan Temple, Coimbatore" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">77</span>Marudhamalai Murugan Temple</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">77</span>Marudhamalai Murugan Temple, Coimbatore</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Pazhamudircholai%201.jpeg" data-gallery aria-label="Enlarge photo: Pazhamudircholai">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Pazhamudircholai%201.jpeg" alt="Pazhamudircholai" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Pazhamudircholai%201.jpeg" data-gallery aria-label="Enlarge photo: Pazhamudircholai Murugan Temple, near Madurai · 6th abode of Murugan">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Pazhamudircholai%201.jpeg" alt="Pazhamudircholai Murugan Temple, near Madurai · 6th abode of Murugan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">78</span>Pazhamudircholai</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">78</span>Pazhamudircholai Murugan Temple, near Madurai · 6th abode of Murugan</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Pazhamudircholai%202.jpeg" data-gallery aria-label="Enlarge photo: Pazhamudircholai">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Pazhamudircholai%202.jpeg" alt="Pazhamudircholai" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Pazhamudircholai%202.jpeg" data-gallery aria-label="Enlarge photo: Pazhamudircholai Murugan Temple, near Madurai · 6th abode of Murugan">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Pazhamudircholai%202.jpeg" alt="Pazhamudircholai Murugan Temple, near Madurai · 6th abode of Murugan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">79</span>Pazhamudircholai</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">79</span>Pazhamudircholai Murugan Temple, near Madurai · 6th abode of Murugan</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Rameswaram%201.jpeg" data-gallery aria-label="Enlarge photo: Rameswaram">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Rameswaram%201.jpeg" alt="Rameswaram" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Rameswaram%201.jpeg" data-gallery aria-label="Enlarge photo: Rameswaram, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Rameswaram%201.jpeg" alt="Rameswaram, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">80</span>Rameswaram</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">80</span>Rameswaram, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Rameswaram%202.jpeg" data-gallery aria-label="Enlarge photo: Rameswaram">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Rameswaram%202.jpeg" alt="Rameswaram" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Rameswaram%202.jpeg" data-gallery aria-label="Enlarge photo: Rameswaram, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Rameswaram%202.jpeg" alt="Rameswaram, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">81</span>Rameswaram</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">81</span>Rameswaram, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Sri%20Rangam%201.jpeg" data-gallery aria-label="Enlarge photo: Sri Rangam">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Sri%20Rangam%201.jpeg" alt="Sri Rangam" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Sri%20Rangam%201.jpeg" data-gallery aria-label="Enlarge photo: Srirangam, Tiruchirappalli">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Sri%20Rangam%201.jpeg" alt="Srirangam, Tiruchirappalli" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">82</span>Sri Rangam</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">82</span>Srirangam, Tiruchirappalli</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Sri%20Rangam%202.jpeg" data-gallery aria-label="Enlarge photo: Sri Rangam">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Sri%20Rangam%202.jpeg" alt="Sri Rangam" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Sri%20Rangam%202.jpeg" data-gallery aria-label="Enlarge photo: Srirangam, Tiruchirappalli">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Sri%20Rangam%202.jpeg" alt="Srirangam, Tiruchirappalli" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">83</span>Sri Rangam</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">83</span>Srirangam, Tiruchirappalli</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Swaminatha%20Swamy%20Temple%2C%20Murugan%204th%20house%20-%201.jpeg" data-gallery aria-label="Enlarge photo: Swaminatha Swamy Temple, Murugan 4th house">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Swaminatha%20Swamy%20Temple%2C%20Murugan%204th%20house%20-%201.jpeg" alt="Swaminatha Swamy Temple, Murugan 4th house" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Swaminatha%20Swamy%20Temple%2C%20Murugan%204th%20house%20-%201.jpeg" data-gallery aria-label="Enlarge photo: Swaminatha Swamy Temple, Swamimalai, near Kumbakonam · 4th abode of Murugan">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Swaminatha%20Swamy%20Temple%2C%20Murugan%204th%20house%20-%201.jpeg" alt="Swaminatha Swamy Temple, Swamimalai, near Kumbakonam · 4th abode of Murugan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">84</span>Swaminatha Swamy Temple, Murugan 4th house</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">84</span>Swaminatha Swamy Temple, Swamimalai, near Kumbakonam · 4th abode of Murugan</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%201.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%201.jpeg" alt="Thanjavur" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%201.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%201.jpeg" alt="Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">85</span>Thanjavur</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">85</span>Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%202.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%202.jpeg" alt="Thanjavur" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%202.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%202.jpeg" alt="Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">86</span>Thanjavur</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">86</span>Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%203.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%203.jpeg" alt="Thanjavur" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%203.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%203.jpeg" alt="Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">87</span>Thanjavur</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">87</span>Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%204.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%204.jpeg" alt="Thanjavur" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%204.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%204.jpeg" alt="Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">88</span>Thanjavur</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">88</span>Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%205.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%205.jpeg" alt="Thanjavur" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%205.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%205.jpeg" alt="Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">89</span>Thanjavur</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">89</span>Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%206.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%206.jpeg" alt="Thanjavur" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%206.jpeg" data-gallery aria-label="Enlarge photo: Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thanjavur%206.jpeg" alt="Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">90</span>Thanjavur</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">90</span>Thanjavur Big Temple (Brihadisvara Temple), Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruchendur%201.jpeg" data-gallery aria-label="Enlarge photo: Thiruchendur">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruchendur%201.jpeg" alt="Thiruchendur" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruchendur%201.jpeg" data-gallery aria-label="Enlarge photo: Thiruchendur Murugan Temple, Thoothukudi district · 2nd abode of Murugan">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruchendur%201.jpeg" alt="Thiruchendur Murugan Temple, Thoothukudi district · 2nd abode of Murugan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">91</span>Thiruchendur</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">91</span>Thiruchendur Murugan Temple, Thoothukudi district · 2nd abode of Murugan</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruchendur%202.jpeg" data-gallery aria-label="Enlarge photo: Thiruchendur">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruchendur%202.jpeg" alt="Thiruchendur" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruchendur%202.jpeg" data-gallery aria-label="Enlarge photo: Thiruchendur Murugan Temple, Thoothukudi district · 2nd abode of Murugan">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruchendur%202.jpeg" alt="Thiruchendur Murugan Temple, Thoothukudi district · 2nd abode of Murugan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">92</span>Thiruchendur</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">92</span>Thiruchendur Murugan Temple, Thoothukudi district · 2nd abode of Murugan</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruparankundram%201.jpeg" data-gallery aria-label="Enlarge photo: Thiruparankundram">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruparankundram%201.jpeg" alt="Thiruparankundram" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruparankundram%201.jpeg" data-gallery aria-label="Enlarge photo: Thiruparankundram Murugan Temple, Madurai · 1st abode of Murugan">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruparankundram%201.jpeg" alt="Thiruparankundram Murugan Temple, Madurai · 1st abode of Murugan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">93</span>Thiruparankundram</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">93</span>Thiruparankundram Murugan Temple, Madurai · 1st abode of Murugan</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruparankundram%202.jpeg" data-gallery aria-label="Enlarge photo: Thiruparankundram">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruparankundram%202.jpeg" alt="Thiruparankundram" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruparankundram%202.jpeg" data-gallery aria-label="Enlarge photo: Thiruparankundram Murugan Temple, Madurai · 1st abode of Murugan">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruparankundram%202.jpeg" alt="Thiruparankundram Murugan Temple, Madurai · 1st abode of Murugan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">94</span>Thiruparankundram</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">94</span>Thiruparankundram Murugan Temple, Madurai · 1st abode of Murugan</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruvanamalai%201.jpeg" data-gallery aria-label="Enlarge photo: Thiruvanamalai">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruvanamalai%201.jpeg" alt="Thiruvanamalai" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruvanamalai%201.jpeg" data-gallery aria-label="Enlarge photo: Tiruvannamalai, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruvanamalai%201.jpeg" alt="Tiruvannamalai, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">95</span>Thiruvanamalai</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">95</span>Tiruvannamalai, Tamil Nadu</figcaption>
 </figure>
 
-<figure>
-  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruvanamalai%202.jpeg" data-gallery aria-label="Enlarge photo: Thiruvanamalai">
-    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruvanamalai%202.jpeg" alt="Thiruvanamalai" loading="lazy" decoding="async">
+<figure data-place="tamil-nadu">
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Thiruvanamalai%202.jpeg" data-gallery aria-label="Enlarge photo: Tiruvannamalai, Tamil Nadu">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Thiruvanamalai%202.jpeg" alt="Tiruvannamalai, Tamil Nadu" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">96</span>Thiruvanamalai</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">96</span>Tiruvannamalai, Tamil Nadu</figcaption>
 </figure>
 </figure>
 </figure>
@@ -823,5 +830,67 @@
   <a class="brand" href="../index.html"><svg width="25" height="25" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="12" stroke="currentColor" stroke-width="1.25"/><path d="m18.7 9.3-2.5 6.9-6.9 2.5 2.5-6.9 6.9-2.5Z" fill="currentColor"/><circle cx="14" cy="14" r="1.25" fill="#132d36"/></svg><span>Theepana<small>TRAVEL JOURNAL</small></span></a>
   <a class="header-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
 </div></footer>
+<script>
+(() => {
+  const filters = document.querySelector('#place-filters');
+  const gallery = document.querySelector('#photos');
+  const count = document.querySelector('#photo-count');
+  const figures = [...gallery.querySelectorAll('figure[data-place]')];
+  const buttons = [...filters.querySelectorAll('button[data-place]')];
+  let shown = figures;
+  filters.hidden = false;
+  filters.addEventListener('click', (event) => {
+    const button = event.target.closest('button[data-place]');
+    if (!buttons.includes(button)) return;
+    const place = button.dataset.place;
+    for (const other of buttons) other.setAttribute('aria-pressed', String(other === button));
+    shown = figures.filter((figure) => {
+      figure.hidden = place !== 'all' && figure.dataset.place !== place;
+      return !figure.hidden;
+    });
+    count.textContent = `${shown.length} ${shown.length === 1 ? 'photo' : 'photos'}`;
+  });
+
+  const dialog = document.querySelector('#lightbox');
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+  const close = dialog.querySelector('.lightbox-close');
+  const prev = dialog.querySelector('.lightbox-prev');
+  const next = dialog.querySelector('.lightbox-next');
+  const image = dialog.querySelector('img');
+  const caption = dialog.querySelector('figcaption');
+  let active = [];
+  let index = 0;
+  let opener;
+  function render(target) {
+    index = (target + active.length) % active.length;
+    const link = active[index];
+    image.src = link.href;
+    image.alt = link.querySelector('img').alt;
+    caption.textContent = `${image.alt} · ${index + 1} of ${active.length}`;
+  }
+  gallery.addEventListener('click', (event) => {
+    const link = event.target.closest('a[data-gallery]');
+    if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    active = shown.map(figure => figure.querySelector('a[data-gallery]'));
+    const clicked = active.indexOf(link);
+    if (clicked < 0) return;
+    event.preventDefault();
+    opener = link;
+    prev.disabled = next.disabled = active.length < 2;
+    render(clicked);
+    dialog.showModal();
+  });
+  close.addEventListener('click', () => dialog.close());
+  prev.addEventListener('click', () => render(index - 1));
+  next.addEventListener('click', () => render(index + 1));
+  dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('keydown', (event) => {
+    if (active.length < 2 || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    render(index + (event.key === 'ArrowLeft' ? -1 : 1));
+  });
+  dialog.addEventListener('close', () => opener?.focus());
+})();
+</script>
 </body>
 </html>
