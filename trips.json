@@ -1,0 +1,88 @@
+[
+  {
+    "slug": "uae-february-2024",
+    "title": "UAE",
+    "country": "United Arab Emirates",
+    "date": "2024-02",
+    "note": "My first international trip",
+    "folder": "uae/feb-2024",
+    "photos": [
+      { "file": "dubai-skyline.jpg", "place": "Dubai skyline" },
+      { "file": "desert-dunes.jpg", "place": "UAE desert dunes" }
+    ]
+  },
+  {
+    "slug": "north-india-september-2024",
+    "title": "North India",
+    "country": "India",
+    "date": "2024-09",
+    "note": "",
+    "folder": "india/sep-2024",
+    "photos": [
+      { "file": "taj-mahal.jpg", "place": "Taj Mahal, Agra" },
+      { "file": "hawa-mahal.jpg", "place": "Hawa Mahal, Jaipur" }
+    ]
+  },
+  {
+    "slug": "uae-november-2024",
+    "title": "UAE",
+    "country": "United Arab Emirates",
+    "date": "2024-11",
+    "note": "A return to the UAE",
+    "folder": "uae/nov-2024",
+    "photos": [
+      { "file": "abu-dhabi-mosque.jpg", "place": "Sheikh Zayed Grand Mosque, Abu Dhabi" },
+      { "file": "dubai-marina.jpg", "place": "Dubai Marina" }
+    ]
+  },
+  {
+    "slug": "south-india-june-2025",
+    "title": "South India",
+    "country": "India",
+    "date": "2025-06",
+    "note": "Tamil Nadu and Karnataka",
+    "folder": "india/jun-2025",
+    "photos": [
+      { "file": "tamil-nadu-temple.jpg", "place": "Temple architecture, Tamil Nadu" },
+      { "file": "karnataka-hampi.jpg", "place": "Hampi, Karnataka" },
+      { "file": "tamil-nadu-hills.jpg", "place": "Tamil Nadu hills" }
+    ]
+  },
+  {
+    "slug": "singapore-august-2025",
+    "title": "Singapore",
+    "country": "Singapore",
+    "date": "2025-08",
+    "note": "Moved to Singapore for higher studies",
+    "folder": "singapore/aug-2025",
+    "photos": [
+      { "file": "marina-bay.jpg", "place": "Marina Bay, Singapore" },
+      { "file": "gardens-by-the-bay.jpg", "place": "Gardens by the Bay, Singapore" },
+      { "file": "heritage-shophouses.jpg", "place": "Singapore heritage shophouses" }
+    ]
+  },
+  {
+    "slug": "malaysia-january-2026",
+    "title": "Malaysia",
+    "country": "Malaysia",
+    "date": "2026-01",
+    "note": "",
+    "folder": "malaysia/jan-2026",
+    "photos": [
+      { "file": "kuala-lumpur.jpg", "place": "Kuala Lumpur, Malaysia" },
+      { "file": "batu-caves.jpg", "place": "Batu Caves, Selangor" }
+    ]
+  },
+  {
+    "slug": "thailand-january-2026",
+    "title": "Thailand",
+    "country": "Thailand",
+    "date": "2026-01",
+    "note": "",
+    "folder": "thailand/jan-2026",
+    "photos": [
+      { "file": "bangkok-temple.jpg", "place": "Temple architecture, Bangkok" },
+      { "file": "krabi-coast.jpg", "place": "Krabi coast, Thailand" }
+    ]
+  }
+]
