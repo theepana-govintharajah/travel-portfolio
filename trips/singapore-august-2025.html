@@ -8,7 +8,11 @@
   <title>Singapore | August 2025 | Theepana’s Travel Journal</title>
   <link rel="icon" href="../assets/compass.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/styles.css">
-  <script src="../assets/site.js" defer></script>
+  <style>
+    .singapore-filters { margin-top: 12px; }
+    .singapore-filters[data-filter-row]:not([data-filter-row="main"]) { padding-top: 11px; border-top: 1px solid var(--rule); }
+    #no-photos { margin-top: 16px; }
+  </style>
 </head>
 <body>
 
@@ -31,10 +35,34 @@
     <p class="detail-country"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Singapore</p>
   </div>
   <section aria-labelledby="gallery-title">
-    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p>14 photos</p></div>
+    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p id="photo-count" aria-live="polite" aria-atomic="true">14 photos</p></div>
     
+    <div class="filters singapore-filters" data-filter-row="main" role="group" aria-label="Filter by category" hidden>
+      <button type="button" data-value="all" aria-pressed="true" aria-controls="photos">All</button>
+      <button type="button" data-value="tourist" aria-pressed="false" aria-controls="photos">Tourist Places</button>
+      <button type="button" data-value="festival" aria-pressed="false" aria-controls="photos">Festivals</button>
+      <button type="button" data-value="nus" aria-pressed="false" aria-controls="photos">NUS</button>
+    </div>
+    <div class="filters singapore-filters" data-filter-row="tourist" role="group" aria-label="Filter tourist places" hidden>
+      <button type="button" data-value="all" aria-pressed="true" aria-controls="photos">All</button>
+      <button type="button" data-value="marina-bay-sands" aria-pressed="false" aria-controls="photos">Marina Bay Sands</button>
+      <button type="button" data-value="gardens-by-the-bay" aria-pressed="false" aria-controls="photos">Gardens by the Bay</button>
+      <button type="button" data-value="botanic-gardens" aria-pressed="false" aria-controls="photos">Singapore Botanic Gardens</button>
+      <button type="button" data-value="harry-potter" aria-pressed="false" aria-controls="photos">Harry Potter: Visions of Magic</button>
+    </div>
+    <div class="filters singapore-filters" data-filter-row="festival" role="group" aria-label="Filter festivals and celebrations" hidden>
+      <button type="button" data-value="all" aria-pressed="true" aria-controls="photos">All</button>
+      <button type="button" data-value="birthday" aria-pressed="false" aria-controls="photos">Birthday</button>
+      <button type="button" data-value="chinese-new-year" aria-pressed="false" aria-controls="photos">Chinese New Year</button>
+      <button type="button" data-value="deepavali" aria-pressed="false" aria-controls="photos">Deepavali</button>
+    </div>
+    <div class="filters singapore-filters" data-filter-row="year" role="group" aria-label="Filter birthdays by year" hidden>
+      <button type="button" data-value="2025" aria-pressed="false" aria-controls="photos">2025</button>
+      <button type="button" data-value="2026" aria-pressed="false" aria-controls="photos">2026</button>
+    </div>
+    <p class="gallery-note" id="no-photos" hidden>No photos added here yet.</p>
     <div class="gallery" id="photos">
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 1.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 1">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 1.jpeg" alt="Harry Porter Vision of the Magic 1" fetchpriority="high" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -42,7 +70,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">01</span>Harry Porter Vision of the Magic 1</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 2.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 2">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 2.jpeg" alt="Harry Porter Vision of the Magic 2" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -50,7 +78,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">02</span>Harry Porter Vision of the Magic 2</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 3.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 3">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 3.jpeg" alt="Harry Porter Vision of the Magic 3" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -58,7 +86,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">03</span>Harry Porter Vision of the Magic 3</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 4.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 4">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 4.jpeg" alt="Harry Porter Vision of the Magic 4" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -66,7 +94,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">04</span>Harry Porter Vision of the Magic 4</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 5.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 5">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 5.jpeg" alt="Harry Porter Vision of the Magic 5" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -74,7 +102,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">05</span>Harry Porter Vision of the Magic 5</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 6.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 6">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 6.jpeg" alt="Harry Porter Vision of the Magic 6" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -82,7 +110,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">06</span>Harry Porter Vision of the Magic 6</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 7.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 7">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 7.jpeg" alt="Harry Porter Vision of the Magic 7" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -90,7 +118,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">07</span>Harry Porter Vision of the Magic 7</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 8.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 8">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 8.jpeg" alt="Harry Porter Vision of the Magic 8" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -98,7 +126,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">08</span>Harry Porter Vision of the Magic 8</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 9.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 9">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 9.jpeg" alt="Harry Porter Vision of the Magic 9" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -106,7 +134,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">09</span>Harry Porter Vision of the Magic 9</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 10.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 10">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 10.jpeg" alt="Harry Porter Vision of the Magic 10" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -114,7 +142,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">10</span>Harry Porter Vision of the Magic 10</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 11.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 11">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 11.jpeg" alt="Harry Porter Vision of the Magic 11" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -122,7 +150,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">11</span>Harry Porter Vision of the Magic 11</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 12.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 12">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 12.jpeg" alt="Harry Porter Vision of the Magic 12" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -130,7 +158,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">12</span>Harry Porter Vision of the Magic 12</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 13.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 13">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 13.jpeg" alt="Harry Porter Vision of the Magic 13" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -138,7 +166,7 @@
   <figcaption><span class="plate-number" aria-hidden="true">13</span>Harry Porter Vision of the Magic 13</figcaption>
 </figure>
 
-<figure>
+<figure data-tourist="harry-potter" data-festival="birthday" data-year="2026">
   <a class="gallery-image" href="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 14.jpeg" data-gallery aria-label="Enlarge photo: Harry Porter Vision of the Magic 14">
     <img src="../photos/singapore/aug-2025/Harry porter/Harry Porter Vision of the magic 14.jpeg" alt="Harry Porter Vision of the Magic 14" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -164,5 +192,93 @@
   <a class="brand" href="../index.html"><svg width="25" height="25" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="12" stroke="currentColor" stroke-width="1.25"/><path d="m18.7 9.3-2.5 6.9-6.9 2.5 2.5-6.9 6.9-2.5Z" fill="currentColor"/><circle cx="14" cy="14" r="1.25" fill="#132d36"/></svg><span>Theepana<small>TRAVEL JOURNAL</small></span></a>
   <a class="header-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
 </div></footer>
+<script>
+(() => {
+  const groups = Object.fromEntries([...document.querySelectorAll('[data-filter-row]')].map(row => [row.dataset.filterRow,row]));
+  const gallery = document.querySelector('#photos');
+  const count = document.querySelector('#photo-count');
+  const empty = document.querySelector('#no-photos');
+  const photos = [...gallery.querySelectorAll(':scope > figure')];
+  const state = { main: 'all', tourist: 'all', festival: 'all', year: '' };
+  let shown = photos;
+  function update() {
+    groups.main.hidden = false;
+    groups.tourist.hidden = state.main !== 'tourist';
+    groups.festival.hidden = state.main !== 'festival';
+    groups.year.hidden = state.main !== 'festival' || state.festival !== 'birthday';
+    for (const [key,row] of Object.entries(groups)) {
+      for (const button of row.querySelectorAll('button[data-value]')) {
+        button.setAttribute('aria-pressed', String(button.dataset.value === state[key]));
+      }
+    }
+    shown = photos.filter(figure => {
+      const photo = figure.dataset;
+      let match = state.main === 'all';
+      if (state.main === 'tourist') match = !!photo.tourist && (state.tourist === 'all' || photo.tourist === state.tourist);
+      if (state.main === 'festival') {
+        match = !!photo.festival && (state.festival === 'all' || photo.festival === state.festival);
+        if (state.festival === 'birthday' && state.year) match = match && photo.year === state.year;
+      }
+      if (state.main === 'nus') match = photo.nus === 'true';
+      figure.hidden = !match;
+      return match;
+    });
+    gallery.hidden = shown.length === 0;
+    empty.hidden = shown.length !== 0;
+    count.textContent = `${shown.length} ${shown.length === 1 ? 'photo' : 'photos'}`;
+  }
+  for (const [key,row] of Object.entries(groups)) {
+    row.addEventListener('click', event => {
+      const button = event.target.closest('button[data-value]');
+      if (!button || !row.contains(button) || row.hidden) return;
+      state[key] = button.dataset.value;
+      if (key === 'main') Object.assign(state, { tourist: 'all', festival: 'all', year: '' });
+      if (key === 'festival') state.year = '';
+      update();
+    });
+  }
+  update();
+
+  const dialog = document.querySelector('#lightbox');
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+  const close = dialog.querySelector('.lightbox-close');
+  const prev = dialog.querySelector('.lightbox-prev');
+  const next = dialog.querySelector('.lightbox-next');
+  const image = dialog.querySelector('img');
+  const caption = dialog.querySelector('figcaption');
+  let active = [];
+  let index = 0;
+  let opener;
+  function render(target) {
+    index = (target + active.length) % active.length;
+    const link = active[index];
+    image.src = link.href;
+    image.alt = link.querySelector('img').alt;
+    caption.textContent = `${image.alt} · ${index + 1} of ${active.length}`;
+  }
+  gallery.addEventListener('click', (event) => {
+    const link = event.target.closest('a[data-gallery]');
+    if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    active = shown.map(figure => figure.querySelector('a[data-gallery]'));
+    const clicked = active.indexOf(link);
+    if (clicked < 0) return;
+    event.preventDefault();
+    opener = link;
+    prev.disabled = next.disabled = active.length < 2;
+    render(clicked);
+    dialog.showModal();
+  });
+  close.addEventListener('click', () => dialog.close());
+  prev.addEventListener('click', () => render(index - 1));
+  next.addEventListener('click', () => render(index + 1));
+  dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('keydown', (event) => {
+    if (active.length < 2 || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    render(index + (event.key === 'ArrowLeft' ? -1 : 1));
+  });
+  dialog.addEventListener('close', () => opener?.focus());
+})();
+</script>
 </body>
 </html>
