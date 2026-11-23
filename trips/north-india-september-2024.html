@@ -8,7 +8,9 @@
   <title>North India | September 2024 | Theepana’s Travel Journal</title>
   <link rel="icon" href="../assets/compass.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/styles.css">
-  <script src="../assets/site.js" defer></script>
+  <style>
+    .north-india-filters { margin-top: 12px; }
+  </style>
 </head>
 <body>
 
@@ -31,10 +33,15 @@
     <p class="detail-country"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>India</p>
   </div>
   <section aria-labelledby="gallery-title">
-    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p>2 photos</p></div>
+    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p id="photo-count" role="status">18 photos</p></div>
     
+    <div class="filters north-india-filters" id="place-filters" role="group" aria-label="Filter photos by city" hidden>
+      <button type="button" data-place="all" aria-pressed="true">All</button>
+      <button type="button" data-place="delhi" aria-pressed="false">Delhi</button>
+      <button type="button" data-place="agra" aria-pressed="false">Agra</button>
+    </div>
     <div class="gallery" id="photos">
-<figure>
+<figure data-city="agra">
   <a class="gallery-image" href="../photos/india/sep-2024/taj-mahal.jpg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
     <img src="../photos/india/sep-2024/taj-mahal.jpg" alt="Taj Mahal, Agra" fetchpriority="high" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -42,13 +49,142 @@
   <figcaption><span class="plate-number" aria-hidden="true">01</span>Taj Mahal, Agra</figcaption>
 </figure>
 
-<figure>
+<figure data-city="jaipur">
   <a class="gallery-image" href="../photos/india/sep-2024/hawa-mahal.jpg" data-gallery aria-label="Enlarge photo: Hawa Mahal, Jaipur">
     <img src="../photos/india/sep-2024/hawa-mahal.jpg" alt="Hawa Mahal, Jaipur" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
   <figcaption><span class="plate-number" aria-hidden="true">02</span>Hawa Mahal, Jaipur</figcaption>
-</figure></div>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Afsarwala%20Tomb.jpeg" data-gallery aria-label="Enlarge photo: Afsarwala Tomb">
+    <img src="../photos/india/sep-2024/Delhi/Afsarwala%20Tomb.jpeg" alt="Afsarwala Tomb" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">03</span>Afsarwala Tomb</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Akshardham%20Temple%201.jpeg" data-gallery aria-label="Enlarge photo: Akshardham Temple">
+    <img src="../photos/india/sep-2024/Delhi/Akshardham%20Temple%201.jpeg" alt="Akshardham Temple" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">04</span>Akshardham Temple</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Akshardham%20Temple%202.jpeg" data-gallery aria-label="Enlarge photo: Akshardham Temple">
+    <img src="../photos/india/sep-2024/Delhi/Akshardham%20Temple%202.jpeg" alt="Akshardham Temple" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">05</span>Akshardham Temple</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Humayun%27s%20Tomb%201.jpeg" data-gallery aria-label="Enlarge photo: Humayun’s Tomb">
+    <img src="../photos/india/sep-2024/Delhi/Humayun%27s%20Tomb%201.jpeg" alt="Humayun’s Tomb" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">06</span>Humayun’s Tomb</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Humayun%27s%20Tomb%202.jpeg" data-gallery aria-label="Enlarge photo: Humayun’s Tomb">
+    <img src="../photos/india/sep-2024/Delhi/Humayun%27s%20Tomb%202.jpeg" alt="Humayun’s Tomb" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">07</span>Humayun’s Tomb</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Isa%20Khan%27s%20Tomb%201.jpeg" data-gallery aria-label="Enlarge photo: Isa Khan’s Tomb">
+    <img src="../photos/india/sep-2024/Delhi/Isa%20Khan%27s%20Tomb%201.jpeg" alt="Isa Khan’s Tomb" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">08</span>Isa Khan’s Tomb</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Isa%20Khan%27s%20Tomb%202.jpeg" data-gallery aria-label="Enlarge photo: Isa Khan’s Tomb">
+    <img src="../photos/india/sep-2024/Delhi/Isa%20Khan%27s%20Tomb%202.jpeg" alt="Isa Khan’s Tomb" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">09</span>Isa Khan’s Tomb</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Isa%20Khan%27s%20Tomb%203.jpeg" data-gallery aria-label="Enlarge photo: Isa Khan’s Tomb">
+    <img src="../photos/india/sep-2024/Delhi/Isa%20Khan%27s%20Tomb%203.jpeg" alt="Isa Khan’s Tomb" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">10</span>Isa Khan’s Tomb</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Lotus%20Temple%201.jpeg" data-gallery aria-label="Enlarge photo: Lotus Temple">
+    <img src="../photos/india/sep-2024/Delhi/Lotus%20Temple%201.jpeg" alt="Lotus Temple" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">11</span>Lotus Temple</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Lotus%20Temple%202.jpeg" data-gallery aria-label="Enlarge photo: Lotus Temple">
+    <img src="../photos/india/sep-2024/Delhi/Lotus%20Temple%202.jpeg" alt="Lotus Temple" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">12</span>Lotus Temple</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/India%20Gate%201.jpeg" data-gallery aria-label="Enlarge photo: India Gate">
+    <img src="../photos/india/sep-2024/Delhi/India%20Gate%201.jpeg" alt="India Gate" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">13</span>India Gate</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/India%20Gate%202.jpeg" data-gallery aria-label="Enlarge photo: India Gate">
+    <img src="../photos/india/sep-2024/Delhi/India%20Gate%202.jpeg" alt="India Gate" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">14</span>India Gate</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/India%20gate%203.jpeg" data-gallery aria-label="Enlarge photo: India Gate">
+    <img src="../photos/india/sep-2024/Delhi/India%20gate%203.jpeg" alt="India Gate" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">15</span>India Gate</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/Kartavya%20Path%20Lawns%20-%20Near%20India%20gate.jpeg" data-gallery aria-label="Enlarge photo: Kartavya Path Lawns, near India Gate">
+    <img src="../photos/india/sep-2024/Delhi/Kartavya%20Path%20Lawns%20-%20Near%20India%20gate.jpeg" alt="Kartavya Path Lawns, near India Gate" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">16</span>Kartavya Path Lawns, near India Gate</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/North%20Block%2C%20Central%20Secretariat%201.jpeg" data-gallery aria-label="Enlarge photo: North Block, Central Secretariat">
+    <img src="../photos/india/sep-2024/Delhi/North%20Block%2C%20Central%20Secretariat%201.jpeg" alt="North Block, Central Secretariat" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">17</span>North Block, Central Secretariat</figcaption>
+</figure>
+
+<figure data-city="delhi" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Delhi/North%20Block%2C%20Central%20Secretariat%202.jpeg" data-gallery aria-label="Enlarge photo: North Block, Central Secretariat">
+    <img src="../photos/india/sep-2024/Delhi/North%20Block%2C%20Central%20Secretariat%202.jpeg" alt="North Block, Central Secretariat" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">18</span>North Block, Central Secretariat</figcaption>
+</figure>
+    </div>
   </section>
   <nav class="trip-nav" aria-label="Browse trips">
     <a class="trip-step previous" href="uae-february-2024.html"><span class="step-arrow"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span><span><small>Previous trip</small><strong>UAE<span class="step-date"> · February 2024</span></strong></span></a>
@@ -68,5 +204,84 @@
   <a class="brand" href="../index.html"><svg width="25" height="25" viewBox="0 0 28 28" fill="none" aria-hidden="true"><circle cx="14" cy="14" r="12" stroke="currentColor" stroke-width="1.25"/><path d="m18.7 9.3-2.5 6.9-6.9 2.5 2.5-6.9 6.9-2.5Z" fill="currentColor"/><circle cx="14" cy="14" r="1.25" fill="#132d36"/></svg><span>Theepana<small>TRAVEL JOURNAL</small></span></a>
   <a class="header-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
 </div></footer>
+<script>
+(() => {
+  const filters = document.querySelector('#place-filters');
+  const gallery = document.querySelector('#photos');
+  const count = document.querySelector('#photo-count');
+  const photos = [...gallery.querySelectorAll(':scope > figure')];
+  const buttons = [...filters.querySelectorAll('button[data-place]')];
+  let shown = photos;
+
+  filters.hidden = false;
+  filters.addEventListener('click', event => {
+    const button = event.target.closest('button[data-place]');
+    if (!button || !filters.contains(button)) return;
+    const place = button.dataset.place;
+    for (const other of buttons) other.setAttribute('aria-pressed', String(other === button));
+    shown = photos.filter(figure => {
+      const match = place === 'all' || figure.dataset.city === place;
+      figure.hidden = !match;
+      return match;
+    });
+    count.textContent = `${shown.length} ${shown.length === 1 ? 'photo' : 'photos'}`;
+  });
+
+  const dialog = document.querySelector('#lightbox');
+  const close = dialog?.querySelector('.lightbox-close');
+  const prev = dialog?.querySelector('.lightbox-prev');
+  const next = dialog?.querySelector('.lightbox-next');
+  const image = dialog?.querySelector('img');
+  const caption = dialog?.querySelector('figcaption');
+
+  // The Windows file list hides extensions. Support both .jpeg and .jpg.
+  for (const figure of photos.filter(figure => figure.hasAttribute('data-jpeg-extension-fallback'))) {
+    const link = figure.querySelector('a[data-gallery]');
+    const thumb = link.querySelector('img');
+    const alternate = () => {
+      if (!/\.jpeg$/i.test(link.pathname)) return;
+      const current = link.href;
+      link.href = current.replace(/\.jpeg$/i, '.jpg');
+      thumb.src = link.href;
+      if (image?.src === current) image.src = link.href;
+    };
+    thumb.addEventListener('error', alternate, { once: true });
+    if (thumb.complete && !thumb.naturalWidth) alternate();
+  }
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+  let active = [];
+  let index = 0;
+  let opener;
+  function render(target) {
+    index = (target + active.length) % active.length;
+    const link = active[index];
+    image.src = link.href;
+    image.alt = link.querySelector('img').alt;
+    caption.textContent = image.alt;
+  }
+  gallery.addEventListener('click', (event) => {
+    const link = event.target.closest('a[data-gallery]');
+    if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    active = shown.map(figure => figure.querySelector('a[data-gallery]'));
+    const clicked = active.indexOf(link);
+    if (clicked < 0) return;
+    event.preventDefault();
+    opener = link;
+    prev.disabled = next.disabled = active.length < 2;
+    render(clicked);
+    dialog.showModal();
+  });
+  close.addEventListener('click', () => dialog.close());
+  prev.addEventListener('click', () => render(index - 1));
+  next.addEventListener('click', () => render(index + 1));
+  dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+  dialog.addEventListener('keydown', (event) => {
+    if (active.length < 2 || !['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+    event.preventDefault();
+    render(index + (event.key === 'ArrowLeft' ? -1 : 1));
+  });
+  dialog.addEventListener('close', () => opener?.focus());
+})();
+</script>
 </body>
 </html>
