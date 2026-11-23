@@ -10,7 +10,9 @@
   <link rel="stylesheet" href="../assets/styles.css">
   <style>
     .north-india-filters { margin-top: 12px; }
-    #agra-filters { padding-top: 11px; border-top: 1px solid var(--rule); }
+    #agra-filters, #state-filter-row { padding-top: 11px; border-top: 1px solid var(--rule); }
+    #state-filter-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+    #state-filter-label { font-size: .8rem; font-weight: 650; }
     .place-description { display: block; margin-top: 2px; font-weight: 400; }
   </style>
 </head>
@@ -35,9 +37,9 @@
     <p class="detail-country"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>India</p>
   </div>
   <section aria-labelledby="gallery-title">
-    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p id="photo-count" role="status">111 photos</p></div>
+    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p id="photo-count" role="status">117 photos</p></div>
     
-    <div class="filters north-india-filters" id="place-filters" role="group" aria-label="Filter photos by city" hidden>
+    <div class="filters north-india-filters" id="place-filters" role="group" aria-label="Filter photos by place or journey" hidden>
       <button type="button" data-place="all" aria-pressed="true">All</button>
       <button type="button" data-place="delhi" aria-pressed="false">Delhi</button>
       <button type="button" data-place="agra" aria-pressed="false">Agra</button>
@@ -49,6 +51,17 @@
       <button type="button" data-place="fatehpur-sikri" aria-pressed="false">Fatehpur Sikri</button>
       <button type="button" data-place="abhaneri" aria-pressed="false">Abhaneri</button>
       <button type="button" data-place="jaipur" aria-pressed="false">Jaipur</button>
+      <button type="button" data-place="flight-journey" aria-pressed="false">Flight Journey</button>
+    </div>
+    <div class="north-india-filters" id="state-filter-row" hidden>
+      <span id="state-filter-label">By state or territory</span>
+      <div class="filters" id="state-filters" role="group" aria-labelledby="state-filter-label">
+        <button type="button" data-place="all" aria-pressed="true">All states</button>
+        <button type="button" data-place="delhi-nct" aria-pressed="false">Delhi (NCT)</button>
+        <button type="button" data-place="uttar-pradesh" aria-pressed="false">Uttar Pradesh</button>
+        <button type="button" data-place="uttarakhand" aria-pressed="false">Uttarakhand</button>
+        <button type="button" data-place="rajasthan" aria-pressed="false">Rajasthan</button>
+      </div>
     </div>
     <div class="filters north-india-filters" id="agra-filters" role="group" aria-label="Filter Agra photos by place" hidden>
       <button type="button" data-place="all" aria-pressed="true">All</button>
@@ -900,6 +913,49 @@
   </a>
   <figcaption><span class="plate-number" aria-hidden="true">111</span><span>City Palace Complex, Jaipur<small class="place-description">Sawai Jai Singh II, the founder of Jaipur, built this palace complex in the walled city.</small></span></figcaption>
 </figure>
+
+<figure data-city="flight-journey" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Flight%20Journey/1.jpeg" data-gallery aria-label="Enlarge photo: Flight Journey">
+    <img src="../photos/india/sep-2024/Flight%20Journey/1.jpeg" alt="Flight Journey" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">112</span>Flight Journey</figcaption>
+</figure>
+<figure data-city="flight-journey" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Flight%20Journey/2.jpeg" data-gallery aria-label="Enlarge photo: Flight Journey">
+    <img src="../photos/india/sep-2024/Flight%20Journey/2.jpeg" alt="Flight Journey" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">113</span>Flight Journey</figcaption>
+</figure>
+<figure data-city="flight-journey" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Flight%20Journey/3.jpeg" data-gallery aria-label="Enlarge photo: Flight Journey">
+    <img src="../photos/india/sep-2024/Flight%20Journey/3.jpeg" alt="Flight Journey" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">114</span>Flight Journey</figcaption>
+</figure>
+<figure data-city="flight-journey" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Flight%20Journey/4.jpeg" data-gallery aria-label="Enlarge photo: Flight Journey">
+    <img src="../photos/india/sep-2024/Flight%20Journey/4.jpeg" alt="Flight Journey" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">115</span>Flight Journey</figcaption>
+</figure>
+<figure data-city="flight-journey" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Flight%20Journey/5.jpeg" data-gallery aria-label="Enlarge photo: Flight Journey">
+    <img src="../photos/india/sep-2024/Flight%20Journey/5.jpeg" alt="Flight Journey" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">116</span>Flight Journey</figcaption>
+</figure>
+<figure data-city="flight-journey" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Flight%20Journey/6.jpeg" data-gallery aria-label="Enlarge photo: Flight Journey">
+    <img src="../photos/india/sep-2024/Flight%20Journey/6.jpeg" alt="Flight Journey" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">117</span>Flight Journey</figcaption>
+</figure>
     </div>
   </section>
   <nav class="trip-nav" aria-label="Browse trips">
@@ -924,25 +980,47 @@
 (() => {
   const filters = document.querySelector('#place-filters');
   const agraFilters = document.querySelector('#agra-filters');
+  const stateRow = document.querySelector('#state-filter-row');
+  const stateFilters = document.querySelector('#state-filters');
+
+  // Map each city to its state or territory; existing photo entries stay unchanged.
+  const statesByCity = {
+    delhi: 'delhi-nct',
+    agra: 'uttar-pradesh',
+    kashi: 'uttar-pradesh',
+    mathura: 'uttar-pradesh',
+    vrindavan: 'uttar-pradesh',
+    'fatehpur-sikri': 'uttar-pradesh',
+    haridwar: 'uttarakhand',
+    rishikesh: 'uttarakhand',
+    abhaneri: 'rajasthan',
+    jaipur: 'rajasthan'
+  };
   const gallery = document.querySelector('#photos');
   const count = document.querySelector('#photo-count');
   const photos = [...gallery.querySelectorAll(':scope > figure')];
   const buttons = [...filters.querySelectorAll('button[data-place]')];
   const agraButtons = [...agraFilters.querySelectorAll('button[data-place]')];
+  const stateButtons = [...stateFilters.querySelectorAll('button[data-place]')];
   let city = 'all';
+  let state = 'all';
   let topic = 'all';
   let shown = photos;
 
   function update() {
     agraFilters.hidden = city !== 'agra';
     for (const button of buttons) {
-      button.setAttribute('aria-pressed', String(button.dataset.place === city));
+      button.setAttribute('aria-pressed', String(state === 'all' && button.dataset.place === city));
     }
     for (const button of agraButtons) {
       button.setAttribute('aria-pressed', String(button.dataset.place === topic));
     }
+    for (const button of stateButtons) {
+      button.setAttribute('aria-pressed', String(city === 'all' && button.dataset.place === state));
+    }
     shown = photos.filter(figure => {
       const match = (city === 'all' || figure.dataset.city === city)
+        && (state === 'all' || statesByCity[figure.dataset.city] === state)
         && (city !== 'agra' || topic === 'all' || figure.dataset.topic === topic);
       figure.hidden = !match;
       return match;
@@ -951,10 +1029,20 @@
   }
 
   filters.hidden = false;
+  stateRow.hidden = false;
   filters.addEventListener('click', event => {
     const button = event.target.closest('button[data-place]');
     if (!button || !filters.contains(button)) return;
     city = button.dataset.place;
+    state = 'all';
+    topic = 'all';
+    update();
+  });
+  stateFilters.addEventListener('click', event => {
+    const button = event.target.closest('button[data-place]');
+    if (!button || !stateFilters.contains(button)) return;
+    state = button.dataset.place;
+    city = 'all';
     topic = 'all';
     update();
   });
