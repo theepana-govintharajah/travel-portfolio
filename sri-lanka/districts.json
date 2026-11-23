@@ -1,8 +1,12 @@
 {
   "hero": {
     "file": "assets/sri-lanka-samples/sigiriya.jpg",
-    "place": "Sigiriya-inspired landscape"
+    "place": "Sigiriya",
+    "alt": "Sigiriya-inspired landscape",
+    "show_sample_label": false
   },
+  "intro": "",
+  "show_cover_note": false,
   "provinces": [
     {
       "name": "Western",
@@ -252,12 +256,29 @@
           "slug": "batticaloa",
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/lagoon.jpg",
-              "place": "Lagoon and mangroves"
+              "file": "photos/sri-lanka/baticalo/Batticaloa Gate.jpeg",
+              "place": "Batticaloa Gate",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/coast.jpg",
-              "place": "Tropical coastline"
+              "file": "photos/sri-lanka/baticalo/Mahatma Gandhi Park.jpeg",
+              "place": "Mahatma Gandhi Park",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/baticalo/Mahatma Gandhi Statue in Gandhi Park.jpeg",
+              "place": "Mahatma Gandhi Statue, Gandhi Park",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/baticalo/Temple.jpeg",
+              "place": "Temple",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/baticalo/Hotel.jpeg",
+              "place": "Hotel",
+              "detect_extension": true
             }
           ]
         },

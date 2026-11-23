@@ -26,6 +26,18 @@ def slugify(name):
 def path_url(path):
     return "../" + quote(path, safe="/-._~")
 
+def photo_fallback(photo):
+    if not photo.get("detect_extension"):
+        return ""
+    filename = PurePosixPath(photo["file"])
+    suffixes = (".jpeg", ".jpg", ".JPEG", ".JPG", ".Jpeg", ".Jpg")
+    attrs = " ".join(path_url(filename.with_suffix(ext).as_posix()) for ext in suffixes
+                     if ext != filename.suffix)
+    handler = ("const list=this.dataset.fallback.split(' ');const next=list.shift();"
+               "if(!next){this.onerror=null;return;}this.dataset.fallback=list.join(' ');"
+               "const a=this.closest('a[data-gallery]');if(a)a.href=next;this.src=next;")
+    return f' data-fallback="{escape(attrs)}" onerror="{escape(handler)}"'
+
 def sample(photo):
     return bool(photo and photo["file"].startswith(SAMPLE_DIR))
 
@@ -73,7 +85,7 @@ def layout(site, title, description, body, district=False):
 
 def district_card(district, i):
     thumbnail = cover(district)
-    image = f'<img src="{path_url(thumbnail["file"])}" alt="" loading="lazy" decoding="async">' if thumbnail else ""
+    image = f'<img src="{path_url(thumbnail["file"])}" alt="" loading="lazy" decoding="async"{photo_fallback(thumbnail)}>' if thumbnail else ""
     return f'''<li class="trip-card sl-district-card" data-province="{slugify(district["province"])}">
   <a class="card-link" href="{district["slug"]}.html">
     <div class="card-photo">{image}<span class="card-stamp">DISTRICT {ordinal(i)}</span></div>
@@ -88,10 +100,12 @@ def district_card(district, i):
 def hub(site, data, districts):
     hero = data["hero"]
     provinces = data["provinces"]
-    illustrative = " • illustrative sample" if sample(hero) else ""
+    illustrative = " • illustrative sample" if sample(hero) and hero.get("show_sample_label", True) else ""
+    intro = data.get("intro", "Explore the island, one district at a time.")
+    hero_intro = f"        <p>{escape(intro)}</p>\n" if intro else ""
     cards = "\n".join(district_card(d, i) for i, d in enumerate(districts, 1))
     controls = "\n".join(f'<button type="button" data-province-filter="{slugify(p["name"])}" aria-pressed="false" aria-controls="sl-district-grid">{escape(p["name"])}</button>' for p in provinces)
-    note = '<p class="sample-note sl-covers-note">Illustrative sample covers are used where personal photos haven’t been added.</p>' if any(sample(cover(d)) for d in districts) else ""
+    note = '<p class="sample-note sl-covers-note">Illustrative sample covers are used where personal photos haven’t been added.</p>' if data.get("show_cover_note", True) and any(sample(cover(d)) for d in districts) else ""
     body = f"""
 <main id="main">
   <div class="shell">
@@ -100,8 +114,7 @@ def hub(site, data, districts):
       <div class="sl-hero-copy">
         <p class="eyebrow hero-kicker"><span></span> BORN COUNTRY</p>
         <h1 id="sl-title">Sri Lanka</h1>
-        <p>Explore the island, one district at a time.</p>
-        <a class="hero-button" href="#districts">Explore the districts <span aria-hidden="true">↓</span></a>
+{hero_intro}        <a class="hero-button" href="#districts">Explore the districts <span aria-hidden="true">↓</span></a>
       </div>
       <figure class="sl-hero-photo">
         <img src="{path_url(hero["file"])}" alt="{escape(hero.get("alt", hero["place"]))}" fetchpriority="high" decoding="async">
@@ -137,7 +150,7 @@ def figure(photo, index):
     note = '<span class="sl-sample-badge">Illustrative sample</span>' if sample(photo) else ""
     return f"""<figure>
   <a class="gallery-image" href="{src}" data-gallery aria-label="Enlarge photo: {place}">
-    <img src="{src}" alt="{alt}" {'fetchpriority="high"' if index == 1 else 'loading="lazy"'} decoding="async">
+    <img src="{src}" alt="{alt}" {'fetchpriority="high"' if index == 1 else 'loading="lazy"'} decoding="async"{photo_fallback(photo)}>
     {note}<span class="image-expand" aria-hidden="true">{UP_RIGHT}</span>
   </a>
   <figcaption><span class="plate-number" aria-hidden="true">{ordinal(index)}</span>{place}</figcaption>
@@ -188,8 +201,19 @@ def validate_photo(photo, missing):
     raw = PurePosixPath(path)
     if not path or "\\" in path or raw.is_absolute() or ".." in raw.parts or ":" in path:
         raise ValueError(f"Photo paths must be relative to the site root: {path!r}")
-    if not (SITE / raw).is_file():
+    local = SITE / raw
+    if photo.get("detect_extension") and local.parent.is_dir():
+        # Windows Explorer can hide extensions. Preserve the actual filename for GitHub Pages.
+        supported = {".jpg", ".jpeg", ".png", ".webp", ".avif"}
+        matches = sorted(p for p in local.parent.iterdir()
+                         if p.is_file() and p.stem == local.stem and p.suffix.lower() in supported)
+        if any(p.name == local.name for p in matches):
+            return photo
+        if len(matches) == 1:
+            return {**photo, "file": matches[0].relative_to(SITE).as_posix()}
+    if not local.is_file():
         missing.add(path)
+    return photo
 
 def main():
     parser = ArgumentParser(description=__doc__)
@@ -212,11 +236,11 @@ def main():
             if not NAME_RE.fullmatch(slug) or slug in slugs or slug == "index":
                 raise ValueError(f"Invalid or duplicate district slug: {slug!r}")
             slugs.add(slug)
+            entry = {**district, "province": province["name"]}
             if district.get("cover"):
-                validate_photo(district["cover"], missing)
-            for photo in district["photos"]:
-                validate_photo(photo, missing)
-            districts.append({**district, "province": province["name"]})
+                entry["cover"] = validate_photo(district["cover"], missing)
+            entry["photos"] = [validate_photo(photo, missing) for photo in district["photos"]]
+            districts.append(entry)
     if options.check and missing:
         parser.exit(1, "Missing images:\n  " + "\n  ".join(sorted(missing)) + "\n")
     outputs = {"index.html": hub(site, data, districts)}
