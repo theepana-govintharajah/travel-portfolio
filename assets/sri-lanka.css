@@ -1,0 +1,101 @@
+/* Sri Lanka pages only. The travel journal's shared styles supply the cards and photo viewer. */
+.sl-compass { height: 36px; width: 36px; border-radius: 50%; flex: none; }
+.sl-header-nav { display: flex; flex-wrap: wrap; justify-content: end; column-gap: 20px; }
+.sl-hub-back { margin-bottom: 11px; }
+.sl-hero {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  min-height: clamp(350px, 39vw, 485px);
+  overflow: hidden;
+  border: 1px solid #203d45;
+  border-radius: 8px;
+  background: #173840;
+  color: var(--white);
+}
+.sl-hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: radial-gradient(ellipse at 0% 100%, #365452 0%, transparent 65%);
+  padding: 38px clamp(29px, 5.7vw, 78px);
+}
+.sl-hero-copy .hero-kicker { margin: 0 0 13px; }
+.sl-hero-copy h1 {
+  margin: 0;
+  font: 400 clamp(3.9rem, 7.4vw, 7.25rem)/.94 var(--serif);
+  letter-spacing: -.08em;
+}
+.sl-hero-copy > p:not(.eyebrow) { margin: 19px 0 22px; }
+.sl-hero-photo { min-width: 0; position: relative; isolation: isolate; margin: 0; min-height: 210px; }
+.sl-hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.sl-hero-photo::after {
+  position: absolute; inset: 0; z-index: -1; content: "";
+  background: linear-gradient(0deg, rgb(10 29 28 / .83), transparent 31%);
+}
+.sl-hero-photo figcaption {
+  position: absolute; inset: auto 17px 13px; margin: 0;
+  display: flex; gap: 6px; align-items: center;
+  color: var(--white);
+  font: .7rem/1.3 var(--mono); letter-spacing: .03em;
+}
+.sl-hero-photo figcaption svg { flex: 0 0 17px; }
+.sl-stats {
+  display: flex; justify-content: center; flex-wrap: wrap; gap: 13px 21px;
+  padding: 17px 8px; border-bottom: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font: 650 .67rem/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase;
+}
+.sl-stats > span { display: inline-flex; align-items: center; gap: 7px; }
+.sl-stats > span + span::before { content: "•"; margin-right: 11px; color: var(--rust); }
+.sl-stats b { font: 400 1.28rem/1 var(--serif); color: var(--ink); letter-spacing: -.04em; }
+.sl-index { padding-top: 62px; }
+.sl-index-heading { margin-bottom: 15px; }
+.sl-index-heading .sl-results { font: .76rem/1.55 var(--mono); margin-bottom: 3px; color: var(--rust); }
+.sl-filters { gap: 8px; margin: 0 0 23px; }
+.sl-filters button { min-height: 44px; }
+.sl-district-card .card-photo { background: radial-gradient(ellipse at 95% 30%, #7f9b74, transparent 65%), #536d54; }
+.sl-district-card .card-stamp { font-size: .62rem; }
+.sl-district-card .card-body { min-height: 98px; }
+.sl-district-card .sl-card-province { margin: 0 0 7px; color: var(--rust); font-size: .67rem; letter-spacing: .095em; }
+.sl-district-card .card-body h3 { font-size: clamp(1.63rem, 3vw, 2.2rem); overflow-wrap: anywhere; }
+.sl-district-card .card-arrow { right: 13px; }
+.sl-covers-note { margin-top: 20px; }
+.sl-detail .gallery-image { background: radial-gradient(ellipse at 93% 29%, #8da078, transparent 65%), #526b54; }
+.sl-detail-heading .detail-country { flex-shrink: 0; }
+.sl-sample-badge {
+  position: absolute; top: 12px; left: 12px;
+  color: var(--ink); background: var(--white); border-radius: 2px; padding: 7px 8px;
+  font: 650 .61rem/1 var(--mono); letter-spacing: .065em; text-transform: uppercase;
+}
+@media (min-width: 1050px) {
+  #sl-district-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 20px; }
+}
+@media (max-width: 750px) {
+  .sl-hero { grid-template-columns: minmax(0,1fr) minmax(0,1fr); min-height: 330px; }
+  .sl-hero-copy { padding: 35px 24px; }
+}
+@media (max-width: 580px) {
+  .sl-header-nav { column-gap: 10px; }
+  .sl-header-nav .header-link { font-size: .74rem; gap: 3px; }
+  .sl-section .brand { gap: 6px; }
+  .sl-section .brand small { font-size: .48rem; }
+  .sl-section .header-inner { gap: 8px; }
+  .sl-hub-back { margin-bottom: 7px; }
+  .sl-hero { grid-template-columns: minmax(0, 1fr); }
+  .sl-hero-copy { padding: 30px 23px; }
+  .sl-hero-copy h1 { font-size: clamp(3.65rem, 11vw, 5.2rem); }
+  .sl-hero-copy > p:not(.eyebrow) { margin: 12px 0 16px; }
+  .sl-hero-photo { min-height: clamp(190px, 54.5vw, 280px); }
+  .sl-stats { column-gap: 9px; }
+  .sl-stats > span + span::before { margin-right: 1px; }
+  .sl-index { padding-top: 40px; }
+  .sl-index-heading { gap: 6px; }
+  .sl-filters { margin-bottom: 17px; }
+  .sl-district-card .card-body { min-height: 88px; }
+}
+@media (max-width: 350px) {
+  .sl-header-nav .header-link span { display: none; }
+  .sl-header-nav { column-gap: 8px; }
+  .sl-stats > span:last-child { display: none; }
+}

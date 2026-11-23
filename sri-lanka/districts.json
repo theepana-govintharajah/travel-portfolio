@@ -1,0 +1,439 @@
+{
+  "hero": {
+    "file": "assets/sri-lanka-samples/sigiriya.jpg",
+    "place": "Sigiriya-inspired landscape"
+  },
+  "provinces": [
+    {
+      "name": "Western",
+      "districts": [
+        {
+          "name": "Colombo",
+          "slug": "colombo",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            },
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            },
+            {
+              "file": "assets/sri-lanka-samples/fort.jpg",
+              "place": "Coastal fort"
+            }
+          ]
+        },
+        {
+          "name": "Gampaha",
+          "slug": "gampaha",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            },
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            }
+          ]
+        },
+        {
+          "name": "Kalutara",
+          "slug": "kalutara",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            },
+            {
+              "file": "assets/sri-lanka-samples/waterfall.jpg",
+              "place": "Forest waterfall"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Central",
+      "districts": [
+        {
+          "name": "Kandy",
+          "slug": "kandy",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/tea-hills.jpg",
+              "place": "Tea-covered hills"
+            },
+            {
+              "file": "assets/sri-lanka-samples/stupa.jpg",
+              "place": "Ancient stupa"
+            },
+            {
+              "file": "assets/sri-lanka-samples/waterfall.jpg",
+              "place": "Forest waterfall"
+            }
+          ]
+        },
+        {
+          "name": "Matale",
+          "slug": "matale",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/sigiriya.jpg",
+              "place": "Sigiriya-inspired rock landscape"
+            },
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            },
+            {
+              "file": "assets/sri-lanka-samples/waterfall.jpg",
+              "place": "Forest waterfall"
+            }
+          ]
+        },
+        {
+          "name": "Nuwara Eliya",
+          "slug": "nuwara-eliya",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/tea-hills.jpg",
+              "place": "Tea-covered hills"
+            },
+            {
+              "file": "assets/sri-lanka-samples/waterfall.jpg",
+              "place": "Forest waterfall"
+            },
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Southern",
+      "districts": [
+        {
+          "name": "Galle",
+          "slug": "galle",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/fort.jpg",
+              "place": "Coastal fort"
+            },
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            },
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            }
+          ]
+        },
+        {
+          "name": "Matara",
+          "slug": "matara",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            },
+            {
+              "file": "assets/sri-lanka-samples/fort.jpg",
+              "place": "Coastal fort"
+            }
+          ]
+        },
+        {
+          "name": "Hambantota",
+          "slug": "hambantota",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            },
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Northern",
+      "districts": [
+        {
+          "name": "Jaffna",
+          "slug": "jaffna",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/kovil.jpg",
+              "place": "Kovil architecture"
+            },
+            {
+              "file": "assets/sri-lanka-samples/fort.jpg",
+              "place": "Coastal fort"
+            },
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            }
+          ]
+        },
+        {
+          "name": "Mannar",
+          "slug": "mannar",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            },
+            {
+              "file": "assets/sri-lanka-samples/fort.jpg",
+              "place": "Coastal fort"
+            }
+          ]
+        },
+        {
+          "name": "Vavuniya",
+          "slug": "vavuniya",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            },
+            {
+              "file": "assets/sri-lanka-samples/kovil.jpg",
+              "place": "Kovil architecture"
+            }
+          ]
+        },
+        {
+          "name": "Mullaitivu",
+          "slug": "mullaitivu",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            },
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            }
+          ]
+        },
+        {
+          "name": "Kilinochchi",
+          "slug": "kilinochchi",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            },
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Eastern",
+      "districts": [
+        {
+          "name": "Batticaloa",
+          "slug": "batticaloa",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            },
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            }
+          ]
+        },
+        {
+          "name": "Ampara",
+          "slug": "ampara",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            },
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            }
+          ]
+        },
+        {
+          "name": "Trincomalee",
+          "slug": "trincomalee",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            },
+            {
+              "file": "assets/sri-lanka-samples/kovil.jpg",
+              "place": "Kovil architecture"
+            },
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "North Western",
+      "districts": [
+        {
+          "name": "Kurunegala",
+          "slug": "kurunegala",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            },
+            {
+              "file": "assets/sri-lanka-samples/stupa.jpg",
+              "place": "Ancient stupa"
+            }
+          ]
+        },
+        {
+          "name": "Puttalam",
+          "slug": "puttalam",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            },
+            {
+              "file": "assets/sri-lanka-samples/coast.jpg",
+              "place": "Tropical coastline"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "North Central",
+      "districts": [
+        {
+          "name": "Anuradhapura",
+          "slug": "anuradhapura",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/stupa.jpg",
+              "place": "Ancient stupa"
+            },
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            },
+            {
+              "file": "assets/sri-lanka-samples/lagoon.jpg",
+              "place": "Lagoon and mangroves"
+            }
+          ]
+        },
+        {
+          "name": "Polonnaruwa",
+          "slug": "polonnaruwa",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/stupa.jpg",
+              "place": "Ancient stupa"
+            },
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Uva",
+      "districts": [
+        {
+          "name": "Badulla",
+          "slug": "badulla",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/tea-hills.jpg",
+              "place": "Tea-covered hills"
+            },
+            {
+              "file": "assets/sri-lanka-samples/waterfall.jpg",
+              "place": "Forest waterfall"
+            },
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            }
+          ]
+        },
+        {
+          "name": "Moneragala",
+          "slug": "moneragala",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            },
+            {
+              "file": "assets/sri-lanka-samples/waterfall.jpg",
+              "place": "Forest waterfall"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sabaragamuwa",
+      "districts": [
+        {
+          "name": "Ratnapura",
+          "slug": "ratnapura",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/waterfall.jpg",
+              "place": "Forest waterfall"
+            },
+            {
+              "file": "assets/sri-lanka-samples/tea-hills.jpg",
+              "place": "Tea-covered hills"
+            }
+          ]
+        },
+        {
+          "name": "Kegalle",
+          "slug": "kegalle",
+          "photos": [
+            {
+              "file": "assets/sri-lanka-samples/waterfall.jpg",
+              "place": "Forest waterfall"
+            },
+            {
+              "file": "assets/sri-lanka-samples/rice-fields.jpg",
+              "place": "Rice fields"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

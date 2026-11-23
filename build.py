@@ -67,6 +67,7 @@ def page(site, title, summary, content, prefix="", trip=False):
   <title>{escape(title)}</title>
   <link rel="icon" href="{prefix}assets/compass.svg" type="image/svg+xml">
   <link rel="stylesheet" href="{prefix}assets/styles.css">
+  {'<link rel="stylesheet" href="assets/sri-lanka-home.css">' if not trip else ''}
   <script src="{prefix}assets/site.js" defer></script>
 </head>
 <body>
@@ -77,6 +78,16 @@ def page(site, title, summary, content, prefix="", trip=False):
 </html>
 """
 
+COUNTRY_LABELS = {
+    "uae": "🇦🇪 UAE", "india": "🇮🇳 India", "singapore": "🇸🇬 Singapore",
+    "malaysia": "🇲🇾 Malaysia", "thailand": "🇹🇭 Thailand",
+}
+
+
+def country_key(trip):
+    return trip["folder"].split("/", 1)[0]
+
+
 def home_card(trip, ordinal):
     cover = trip.get("cover")
     first = next(iter(trip.get("photos", [])), None)
@@ -84,7 +95,7 @@ def home_card(trip, ordinal):
     media = f'<img src="{href(path)}" alt="" loading="lazy" decoding="async">' if path else ""
     note = f'<p>{escape(trip["note"])}</p>' if trip["note"] else ""
     return f"""
-<li class="trip-card" data-year="{trip["date"][:4]}">
+<li class="trip-card" data-year="{trip["date"][:4]}" data-country="{escape(country_key(trip))}">
   <a href="{trip_url(trip)}" class="card-link">
     <div class="card-photo">{media}<span class="card-stamp">NO. {stamp(ordinal)}</span></div>
     <div class="card-body">
@@ -96,11 +107,39 @@ def home_card(trip, ordinal):
   </a>
 </li>"""
 
+def home_roots_card(site):
+    cover = site.get("birth_country_cover", "assets/sri-lanka-samples/sigiriya.jpg")
+    sample = '<span>Illustrative sample</span>' if site.get("birth_country_cover_is_sample", True) else ''
+    return f"""  <section class="shell home-roots" id="born-country" aria-labelledby="born-country-title">
+    <p class="eyebrow section-kicker"><span></span> MY BIRTH COUNTRY</p>
+    <a href="sri-lanka/index.html" class="home-roots-card" aria-labelledby="born-country-title born-country-cta">
+      <div class="home-roots-media">
+        <img src="{href(cover)}" alt="" width="557" height="313" loading="lazy" decoding="async">
+        {sample}
+      </div>
+      <div class="home-roots-copy">
+        <h2 id="born-country-title">Sri Lanka</h2>
+        <p>Where my story began. Explore the island one district at a time.</p>
+        <span class="home-roots-cta" id="born-country-cta">Explore all 25 districts <span aria-hidden="true">↗</span></span>
+      </div>
+    </a>
+  </section>
+"""
+
+
 def landing(site, trips):
     first_year, last_year = (trips[0]["date"][:4], trips[-1]["date"][:4]) if trips else ("", "")
     dates = first_year if first_year == last_year else f"{first_year}–{last_year}"
     country_count = len({t["country"] for t in trips})
     year_buttons = "".join(f'<button type="button" data-filter="{y}" aria-pressed="false">{y}</button>' for y in sorted({t["date"][:4] for t in trips}))
+    country_names = {}
+    for trip in trips:
+        key = country_key(trip)
+        country_names.setdefault(key, COUNTRY_LABELS.get(key, trip["country"]))
+    country_buttons = "".join(
+        f'<button type="button" data-country="{escape(key)}" aria-pressed="false">{escape(label)}</button>'
+        for key, label in country_names.items()
+    )
     cards = "\n".join(home_card(t, i) for i, t in enumerate(trips, 1))
     cap = f'<p class="hero-caption">{PIN}{escape(site["hero_caption"])}</p>' if site.get("hero_caption") else ""
     hero_path = site.get("hero_image", "")
@@ -118,17 +157,23 @@ def landing(site, trips):
       </div>
       {cap}
     </div>
-    <div class="stats" aria-label="Journal at a glance">
+    <div class="stats" aria-label="International travel at a glance">
       <div><strong>{stamp(len(trips))}</strong><span>{'Trip' if len(trips) == 1 else 'Trips'}</span></div>
       <div><strong>{stamp(country_count)}</strong><span>{'Country' if country_count == 1 else 'Countries'}</span></div>
       <div><strong>{dates or '—'}</strong><span>Travel years</span></div>
     </div>
   </section>
-  <section class="shell index-section" id="trips" aria-labelledby="index-title">
-    <p class="eyebrow section-kicker"><span></span> THE TRIP INDEX</p>
+{home_roots_card(site)}  <section class="shell index-section" id="trips" aria-labelledby="index-title">
+    <p class="eyebrow section-kicker"><span></span> INTERNATIONAL TRIPS</p>
     <div class="index-heading">
       <div><h2 id="index-title">Journeys</h2><p>Pick a trip to open its photo album.</p></div>
-      <div class="filters" role="group" aria-label="Filter trips by year" hidden><button type="button" data-filter="all" aria-pressed="true">All years</button>{year_buttons}</div>
+      <div class="filters" id="year-filters" role="group" aria-label="Filter trips by year" hidden><button type="button" data-filter="all" aria-pressed="true">All years</button>{year_buttons}</div>
+    </div>
+    <div class="country-filter-section">
+      <p class="country-filter-label">Explore by country</p>
+      <div class="filters" id="country-filters" role="group" aria-label="Filter trips by country" hidden>
+        <button type="button" data-country="all" aria-pressed="true">🌍 All countries</button>{country_buttons}
+      </div>
     </div>
     <p class="sr-only" id="filter-status" aria-live="polite"></p>
     <ul class="trip-grid">{cards}</ul>
@@ -244,6 +289,8 @@ def main():
 
     if site.get("hero_image"):
         validate_path(site["hero_image"], "hero image")
+    if "birth_country_cover" in site:
+        validate_path(site["birth_country_cover"], "Sri Lanka homepage cover")
 
     for i, trip in enumerate(trips):
         name = trip_url(trip)

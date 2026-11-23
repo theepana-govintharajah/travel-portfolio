@@ -1,0 +1,27 @@
+/* Additive homepage feature; international trip styles are untouched. */
+.home-roots { padding-top: clamp(42px, 7vw, 76px); scroll-margin-top: 24px; }
+.home-roots + .index-section { padding-top: clamp(48px, 7vw, 76px); }
+.home-roots .section-kicker { margin-bottom: 13px; }
+.home-roots-card {
+  display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  background: #183a35; color: var(--white); border-radius: 8px; overflow: hidden;
+  text-decoration: none; border: 1px solid #183a35; transition: box-shadow .25s;
+}
+.home-roots-card:hover { box-shadow: 0 14px 32px rgb(19 45 54 / .18); }
+.home-roots-card:focus-visible { outline: 3px solid var(--rust); outline-offset: 4px; }
+.home-roots-media { position: relative; min-height: 300px; overflow: hidden; background: #516a37; }
+.home-roots-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% center; }
+.home-roots-media span {
+  position: absolute; bottom: 12px; left: 12px; padding: 4px 8px; border-radius: 2px;
+  background: #132d36; color: #fff; font: 600 .64rem/1.3 var(--mono);
+}
+.home-roots-copy { align-self: center; padding: clamp(26px, 5vw, 62px); }
+.home-roots-copy h2 { margin: 0; font: 400 clamp(3.25rem, 7vw, 6rem)/.95 var(--serif); letter-spacing: -.07em; }
+.home-roots-copy p { color: #e6ece1; max-width: 31ch; margin: 15px 0 24px; }
+.home-roots-cta { display: inline-flex; align-items: center; gap: 9px; color: #f6bf9e; font-weight: 700; }
+.home-roots-card:hover .home-roots-cta { text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 640px) {
+  .home-roots-card { grid-template-columns: minmax(0, 1fr); }
+  .home-roots-media { min-height: 0; aspect-ratio: 16 / 9; }
+}
+@media (prefers-reduced-motion: reduce) { .home-roots-card { transition: none; } }
