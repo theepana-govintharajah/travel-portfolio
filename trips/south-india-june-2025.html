@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../assets/styles.css">
   <style>
     #place-filters { margin-top: 14px; }
-    #tamil-nadu-filters { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--rule); }
+    #karnataka-filters, #tamil-nadu-filters { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--rule); }
   </style>
 </head>
 <body>
@@ -34,18 +34,23 @@
     <p class="detail-country"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>India</p>
   </div>
   <section aria-labelledby="gallery-title">
-    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p id="photo-count" aria-live="polite" aria-atomic="true">98 photos</p></div>
+    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p id="photo-count" aria-live="polite" aria-atomic="true">102 photos</p></div>
     
     <div id="place-filters" class="filters" role="group" aria-label="Filter photos by destination" hidden>
       <button type="button" data-place="all" aria-pressed="true" aria-controls="photos">All</button>
-      <button type="button" data-place="bangalore" aria-pressed="false" aria-controls="photos">Bangalore</button>
-      <button type="button" data-place="mysore" aria-pressed="false" aria-controls="photos">Mysore</button>
-      <button type="button" data-place="tirumala" aria-pressed="false" aria-controls="photos">Tirumala</button>
+      <button type="button" data-place="karnataka" aria-pressed="false" aria-controls="photos">Karnataka</button>
+      <button type="button" data-place="tirumala" aria-pressed="false" aria-controls="photos">Andhra Pradesh – Tirumala</button>
       <button type="button" data-place="tamil-nadu" aria-pressed="false" aria-controls="photos">Tamil Nadu</button>
+    </div>
+    <div id="karnataka-filters" class="filters" role="group" aria-label="Filter Karnataka photos by place" hidden>
+      <button type="button" data-karnataka-place="all" aria-pressed="true" aria-controls="photos">All</button>
+      <button type="button" data-karnataka-place="bangalore" aria-pressed="false" aria-controls="photos">Bangalore</button>
+      <button type="button" data-karnataka-place="mysore" aria-pressed="false" aria-controls="photos">Mysore</button>
     </div>
     <div id="tamil-nadu-filters" class="filters" role="group" aria-label="Filter Tamil Nadu photos by place" hidden>
       <button type="button" data-tamil-place="all" aria-pressed="true" aria-controls="photos">All</button>
       <button type="button" data-tamil-place="murugan-houses" aria-pressed="false" aria-controls="photos">Murugan Houses</button>
+      <button type="button" data-tamil-place="chennai" aria-pressed="false" aria-controls="photos">Chennai</button>
       <button type="button" data-tamil-place="kanchipuram" aria-pressed="false" aria-controls="photos">Kanchipuram</button>
       <button type="button" data-tamil-place="chidambaram" aria-pressed="false" aria-controls="photos">Chidambaram</button>
       <button type="button" data-tamil-place="madurai" aria-pressed="false" aria-controls="photos">Madurai</button>
@@ -839,7 +844,40 @@
 </figure>
 </figure>
 </figure>
-</figure></div>
+</figure>
+
+<figure data-place="tamil-nadu" data-tamil-place="chennai" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Chennai/MGR%20Memorial%201.jpeg" data-gallery aria-label="Enlarge photo: MGR Memorial, Chennai">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Chennai/MGR%20Memorial%201.jpeg" alt="MGR Memorial, Chennai" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">99</span>MGR Memorial, Chennai</figcaption>
+</figure>
+
+<figure data-place="tamil-nadu" data-tamil-place="chennai" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Chennai/MGR%20Memorial%202.jpeg" data-gallery aria-label="Enlarge photo: MGR Memorial, Chennai">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Chennai/MGR%20Memorial%202.jpeg" alt="MGR Memorial, Chennai" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">100</span>MGR Memorial, Chennai</figcaption>
+</figure>
+
+<figure data-place="tamil-nadu" data-tamil-place="chennai" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Chennai/Vadapalani%20Andavar%20Temple.jpeg" data-gallery aria-label="Enlarge photo: Vadapalani Andavar Temple, Chennai">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Chennai/Vadapalani%20Andavar%20Temple.jpeg" alt="Vadapalani Andavar Temple, Chennai" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">101</span>Vadapalani Andavar Temple, Chennai</figcaption>
+</figure>
+
+<figure data-place="tamil-nadu" data-tamil-place="chennai" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/jun-2025/Tamil%20Nadu/Chennai/Express%20Avenue%20Shopping%20Mall.jpeg" data-gallery aria-label="Enlarge photo: Express Avenue Shopping Mall, Chennai">
+    <img src="../photos/india/jun-2025/Tamil%20Nadu/Chennai/Express%20Avenue%20Shopping%20Mall.jpeg" alt="Express Avenue Shopping Mall, Chennai" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">102</span>Express Avenue Shopping Mall, Chennai</figcaption>
+</figure>
+    </div>
   </section>
   <nav class="trip-nav" aria-label="Browse trips">
     <a class="trip-step previous" href="uae-november-2024.html"><span class="step-arrow"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span><span><small>Previous trip</small><strong>UAE<span class="step-date"> · November 2024</span></strong></span></a>
@@ -862,29 +900,40 @@
 <script>
 (() => {
   const filters = document.querySelector('#place-filters');
+  const karnatakaFilters = document.querySelector('#karnataka-filters');
   const tamilFilters = document.querySelector('#tamil-nadu-filters');
   const gallery = document.querySelector('#photos');
   const count = document.querySelector('#photo-count');
   const figures = [...gallery.querySelectorAll('figure[data-place]')];
   const buttons = [...filters.querySelectorAll('button[data-place]')];
+  const karnatakaButtons = [...karnatakaFilters.querySelectorAll('button[data-karnataka-place]')];
   const tamilButtons = [...tamilFilters.querySelectorAll('button[data-tamil-place]')];
   let destination = 'all';
+  let karnatakaPlace = 'all';
   let tamilPlace = 'all';
   let shown = figures;
   let sortedByAbode = false;
   filters.hidden = false;
 
   function applyFilters() {
+    const inKarnataka = destination === 'karnataka';
     const inTamilNadu = destination === 'tamil-nadu';
+    karnatakaFilters.hidden = !inKarnataka;
     tamilFilters.hidden = !inTamilNadu;
     for (const button of buttons) {
       button.setAttribute('aria-pressed', String(button.dataset.place === destination));
+    }
+    for (const button of karnatakaButtons) {
+      button.setAttribute('aria-pressed', String(button.dataset.karnatakaPlace === karnatakaPlace));
     }
     for (const button of tamilButtons) {
       button.setAttribute('aria-pressed', String(button.dataset.tamilPlace === tamilPlace));
     }
     shown = figures.filter((figure) => {
-      const matchesDestination = destination === 'all' || figure.dataset.place === destination;
+      const photoPlace = figure.dataset.place;
+      const matchesDestination = inKarnataka
+        ? ['bangalore', 'mysore'].includes(photoPlace) && (karnatakaPlace === 'all' || photoPlace === karnatakaPlace)
+        : destination === 'all' || photoPlace === destination;
       const matchesTamilPlace = !inTamilNadu || tamilPlace === 'all' ||
         (tamilPlace === 'murugan-houses' ? figure.dataset.muruganHouse === 'true' : figure.dataset.tamilPlace === tamilPlace);
       figure.hidden = !(matchesDestination && matchesTamilPlace);
@@ -905,7 +954,14 @@
     const button = event.target.closest('button[data-place]');
     if (!buttons.includes(button)) return;
     destination = button.dataset.place;
+    karnatakaPlace = 'all';
     tamilPlace = 'all';
+    applyFilters();
+  });
+  karnatakaFilters.addEventListener('click', (event) => {
+    const button = event.target.closest('button[data-karnataka-place]');
+    if (destination !== 'karnataka' || !karnatakaButtons.includes(button)) return;
+    karnatakaPlace = button.dataset.karnatakaPlace;
     applyFilters();
   });
   tamilFilters.addEventListener('click', (event) => {
@@ -916,6 +972,21 @@
   });
 
   const dialog = document.querySelector('#lightbox');
+  for (const figure of figures) {
+    if (!figure.hasAttribute('data-jpeg-extension-fallback')) continue;
+    const link = figure.querySelector('a[data-gallery]');
+    const thumb = link.querySelector('img');
+    const alternate = () => {
+      if (!/\.jpeg$/i.test(link.pathname)) return;
+      const current = link.href;
+      link.href = current.replace(/\.jpeg$/i, '.jpg');
+      thumb.src = link.href;
+      const expanded = dialog?.querySelector('img');
+      if (expanded?.src === current) expanded.src = link.href;
+    };
+    thumb.addEventListener('error', alternate, { once: true });
+    if (thumb.complete && !thumb.naturalWidth) alternate();
+  }
   if (!dialog || typeof dialog.showModal !== 'function') return;
   const close = dialog.querySelector('.lightbox-close');
   const prev = dialog.querySelector('.lightbox-prev');
