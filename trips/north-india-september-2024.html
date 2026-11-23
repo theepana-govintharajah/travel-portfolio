@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../assets/styles.css">
   <style>
     .north-india-filters { margin-top: 12px; }
+    #agra-filters { padding-top: 11px; border-top: 1px solid var(--rule); }
     .place-description { display: block; margin-top: 2px; font-weight: 400; }
   </style>
 </head>
@@ -34,7 +35,7 @@
     <p class="detail-country"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>India</p>
   </div>
   <section aria-labelledby="gallery-title">
-    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p id="photo-count" role="status">41 photos</p></div>
+    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p id="photo-count" role="status">77 photos</p></div>
     
     <div class="filters north-india-filters" id="place-filters" role="group" aria-label="Filter photos by city" hidden>
       <button type="button" data-place="all" aria-pressed="true">All</button>
@@ -46,8 +47,14 @@
       <button type="button" data-place="mathura" aria-pressed="false">Mathura</button>
       <button type="button" data-place="vrindavan" aria-pressed="false">Vrindavan</button>
     </div>
+    <div class="filters north-india-filters" id="agra-filters" role="group" aria-label="Filter Agra photos by place" hidden>
+      <button type="button" data-place="all" aria-pressed="true">All</button>
+      <button type="button" data-place="baby-taj" aria-pressed="false">Baby Taj</button>
+      <button type="button" data-place="agra-fort" aria-pressed="false">Agra Fort</button>
+      <button type="button" data-place="taj-mahal" aria-pressed="false">Taj Mahal</button>
+    </div>
     <div class="gallery" id="photos">
-<figure data-city="agra">
+<figure data-city="agra" data-topic="taj-mahal">
   <a class="gallery-image" href="../photos/india/sep-2024/taj-mahal.jpg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
     <img src="../photos/india/sep-2024/taj-mahal.jpg" alt="Taj Mahal, Agra" fetchpriority="high" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
@@ -55,12 +62,300 @@
   <figcaption><span class="plate-number" aria-hidden="true">01</span>Taj Mahal, Agra</figcaption>
 </figure>
 
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%201.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%201.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">02</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%202.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%202.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">03</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%203.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%203.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">04</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%204.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%204.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">05</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%205.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%205.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">06</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%206.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%206.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">07</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%207.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%207.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">08</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%208.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%208.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">09</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%209.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%209.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">10</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%2010.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%2010.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">11</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%2011.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%2011.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">12</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Tajmahal%2012.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Tajmahal%2012.jpeg" alt="Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">13</span>Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Great%20Gate%20%28Darwaza-i-Rauza%29%2C%20Taj%20Mahal%201.jpeg" data-gallery aria-label="Enlarge photo: Great Gate (Darwaza-i-Rauza), Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Great%20Gate%20%28Darwaza-i-Rauza%29%2C%20Taj%20Mahal%201.jpeg" alt="Great Gate (Darwaza-i-Rauza), Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">14</span>Great Gate (Darwaza-i-Rauza), Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Great%20Gate%20%28Darwaza-i-Rauza%29%2C%20Taj%20Mahal%202.jpeg" data-gallery aria-label="Enlarge photo: Great Gate (Darwaza-i-Rauza), Taj Mahal, Agra">
+    <img src="../photos/india/sep-2024/Agra/Great%20Gate%20%28Darwaza-i-Rauza%29%2C%20Taj%20Mahal%202.jpeg" alt="Great Gate (Darwaza-i-Rauza), Taj Mahal, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">15</span>Great Gate (Darwaza-i-Rauza), Taj Mahal, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="taj-mahal">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Taj%20Mahal%20Mosque.jpeg" data-gallery aria-label="Enlarge photo: Taj Mahal Mosque, Agra">
+    <img src="../photos/india/sep-2024/Agra/Taj%20Mahal%20Mosque.jpeg" alt="Taj Mahal Mosque, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">16</span>Taj Mahal Mosque, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="baby-taj">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/baby%20taj%201.jpeg" data-gallery aria-label="Enlarge photo: Baby Taj, Agra">
+    <img src="../photos/india/sep-2024/Agra/baby%20taj%201.jpeg" alt="Baby Taj, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">17</span>Baby Taj, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="baby-taj">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/baby%20taj%202.jpeg" data-gallery aria-label="Enlarge photo: Baby Taj, Agra">
+    <img src="../photos/india/sep-2024/Agra/baby%20taj%202.jpeg" alt="Baby Taj, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">18</span>Baby Taj, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="baby-taj">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/baby%20taj%203.jpeg" data-gallery aria-label="Enlarge photo: Baby Taj, Agra">
+    <img src="../photos/india/sep-2024/Agra/baby%20taj%203.jpeg" alt="Baby Taj, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">19</span>Baby Taj, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="baby-taj">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/baby%20taj%204.jpeg" data-gallery aria-label="Enlarge photo: Baby Taj, Agra">
+    <img src="../photos/india/sep-2024/Agra/baby%20taj%204.jpeg" alt="Baby Taj, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">20</span>Baby Taj, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="baby-taj">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/baby%20taj%205.jpeg" data-gallery aria-label="Enlarge photo: Baby Taj, Agra">
+    <img src="../photos/india/sep-2024/Agra/baby%20taj%205.jpeg" alt="Baby Taj, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">21</span>Baby Taj, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%201.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%201.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">22</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%202.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%202.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">23</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%203.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%203.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">24</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%204.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%204.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">25</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%205.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%205.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">26</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%206.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%206.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">27</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%207.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%207.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">28</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%208.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%208.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">29</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%209.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%209.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">30</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%2010.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%2010.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">31</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%2011.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%2011.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">32</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%2012.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%2012.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">33</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback data-topic="agra-fort">
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Agra%20fort%2013.jpeg" data-gallery aria-label="Enlarge photo: Agra Fort, Agra">
+    <img src="../photos/india/sep-2024/Agra/Agra%20fort%2013.jpeg" alt="Agra Fort, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">34</span>Agra Fort, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Mehtab%20Bagh%20%28Moonlight%20Garden%29.jpeg" data-gallery aria-label="Enlarge photo: Mehtab Bagh (Moonlight Garden), Agra">
+    <img src="../photos/india/sep-2024/Agra/Mehtab%20Bagh%20%28Moonlight%20Garden%29.jpeg" alt="Mehtab Bagh (Moonlight Garden), Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">35</span>Mehtab Bagh (Moonlight Garden), Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Hotel%201.jpeg" data-gallery aria-label="Enlarge photo: Hotel, Agra">
+    <img src="../photos/india/sep-2024/Agra/Hotel%201.jpeg" alt="Hotel, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">36</span>Hotel, Agra</figcaption>
+</figure>
+
+<figure data-city="agra" data-jpeg-extension-fallback>
+  <a class="gallery-image" href="../photos/india/sep-2024/Agra/Hotel%202.jpeg" data-gallery aria-label="Enlarge photo: Hotel, Agra">
+    <img src="../photos/india/sep-2024/Agra/Hotel%202.jpeg" alt="Hotel, Agra" loading="lazy" decoding="async">
+    <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
+  </a>
+  <figcaption><span class="plate-number" aria-hidden="true">37</span>Hotel, Agra</figcaption>
+</figure>
+
 <figure data-city="jaipur">
   <a class="gallery-image" href="../photos/india/sep-2024/hawa-mahal.jpg" data-gallery aria-label="Enlarge photo: Hawa Mahal, Jaipur">
     <img src="../photos/india/sep-2024/hawa-mahal.jpg" alt="Hawa Mahal, Jaipur" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">02</span>Hawa Mahal, Jaipur</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">38</span>Hawa Mahal, Jaipur</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -68,7 +363,7 @@
     <img src="../photos/india/sep-2024/Delhi/Afsarwala%20Tomb.jpeg" alt="Afsarwala Tomb, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">03</span>Afsarwala Tomb, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">39</span>Afsarwala Tomb, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -76,7 +371,7 @@
     <img src="../photos/india/sep-2024/Delhi/Akshardham%20Temple%201.jpeg" alt="Akshardham Temple, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">04</span>Akshardham Temple, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">40</span>Akshardham Temple, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -84,7 +379,7 @@
     <img src="../photos/india/sep-2024/Delhi/Akshardham%20Temple%202.jpeg" alt="Akshardham Temple, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">05</span>Akshardham Temple, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">41</span>Akshardham Temple, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -92,7 +387,7 @@
     <img src="../photos/india/sep-2024/Delhi/Humayun%27s%20Tomb%201.jpeg" alt="Humayun’s Tomb, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">06</span>Humayun’s Tomb, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">42</span>Humayun’s Tomb, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -100,7 +395,7 @@
     <img src="../photos/india/sep-2024/Delhi/Humayun%27s%20Tomb%202.jpeg" alt="Humayun’s Tomb, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">07</span>Humayun’s Tomb, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">43</span>Humayun’s Tomb, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -108,7 +403,7 @@
     <img src="../photos/india/sep-2024/Delhi/Isa%20Khan%27s%20Tomb%201.jpeg" alt="Isa Khan’s Tomb, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">08</span>Isa Khan’s Tomb, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">44</span>Isa Khan’s Tomb, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -116,7 +411,7 @@
     <img src="../photos/india/sep-2024/Delhi/Isa%20Khan%27s%20Tomb%202.jpeg" alt="Isa Khan’s Tomb, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">09</span>Isa Khan’s Tomb, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">45</span>Isa Khan’s Tomb, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -124,7 +419,7 @@
     <img src="../photos/india/sep-2024/Delhi/Isa%20Khan%27s%20Tomb%203.jpeg" alt="Isa Khan’s Tomb, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">10</span>Isa Khan’s Tomb, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">46</span>Isa Khan’s Tomb, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -132,7 +427,7 @@
     <img src="../photos/india/sep-2024/Delhi/Lotus%20Temple%201.jpeg" alt="Lotus Temple, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">11</span>Lotus Temple, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">47</span>Lotus Temple, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -140,7 +435,7 @@
     <img src="../photos/india/sep-2024/Delhi/Lotus%20Temple%202.jpeg" alt="Lotus Temple, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">12</span>Lotus Temple, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">48</span>Lotus Temple, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -148,7 +443,7 @@
     <img src="../photos/india/sep-2024/Delhi/India%20Gate%201.jpeg" alt="India Gate, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">13</span>India Gate, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">49</span>India Gate, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -156,7 +451,7 @@
     <img src="../photos/india/sep-2024/Delhi/India%20Gate%202.jpeg" alt="India Gate, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">14</span>India Gate, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">50</span>India Gate, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -164,7 +459,7 @@
     <img src="../photos/india/sep-2024/Delhi/India%20gate%203.jpeg" alt="India Gate, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">15</span>India Gate, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">51</span>India Gate, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -172,7 +467,7 @@
     <img src="../photos/india/sep-2024/Delhi/Kartavya%20Path%20Lawns%20-%20Near%20India%20gate.jpeg" alt="Kartavya Path Lawns, near India Gate, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">16</span>Kartavya Path Lawns, near India Gate, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">52</span>Kartavya Path Lawns, near India Gate, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -180,7 +475,7 @@
     <img src="../photos/india/sep-2024/Delhi/North%20Block%2C%20Central%20Secretariat%201.jpeg" alt="North Block, Central Secretariat, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">17</span>North Block, Central Secretariat, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">53</span>North Block, Central Secretariat, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -188,7 +483,7 @@
     <img src="../photos/india/sep-2024/Delhi/North%20Block%2C%20Central%20Secretariat%202.jpeg" alt="North Block, Central Secretariat, Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">18</span>North Block, Central Secretariat, Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">54</span>North Block, Central Secretariat, Delhi</figcaption>
 </figure>
 
 <figure data-city="delhi" data-jpeg-extension-fallback>
@@ -196,7 +491,7 @@
     <img src="../photos/india/sep-2024/Delhi/Birla%20Ghat%20area%20%E2%80%93%20Temple.jpeg" alt="Shri Lakshmi Narayan Mandir (Birla Temple), Delhi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">19</span>Shri Lakshmi Narayan Mandir (Birla Temple), Delhi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">55</span>Shri Lakshmi Narayan Mandir (Birla Temple), Delhi</figcaption>
 </figure>
 
 <figure data-city="haridwar" data-jpeg-extension-fallback>
@@ -204,49 +499,49 @@
     <img src="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%20%E2%80%93%20Brahmakund.jpeg" alt="Har Ki Pauri – Brahmakund, Haridwar" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">20</span>Har Ki Pauri – Brahmakund, Haridwar</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">56</span>Har Ki Pauri – Brahmakund, Haridwar</figcaption>
 </figure>
 <figure data-city="haridwar" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%20%E2%80%93%20Brahmakund%202.jpeg" data-gallery aria-label="Enlarge photo: Har Ki Pauri – Brahmakund, Haridwar">
     <img src="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%20%E2%80%93%20Brahmakund%202.jpeg" alt="Har Ki Pauri – Brahmakund, Haridwar" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">21</span>Har Ki Pauri – Brahmakund, Haridwar</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">57</span>Har Ki Pauri – Brahmakund, Haridwar</figcaption>
 </figure>
 <figure data-city="haridwar" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%20%E2%80%93%20Ganga%20River%20Bridge.jpeg" data-gallery aria-label="Enlarge photo: Har Ki Pauri – Ganga River Bridge, Haridwar">
     <img src="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%20%E2%80%93%20Ganga%20River%20Bridge.jpeg" alt="Har Ki Pauri – Ganga River Bridge, Haridwar" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">22</span>Har Ki Pauri – Ganga River Bridge, Haridwar</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">58</span>Har Ki Pauri – Ganga River Bridge, Haridwar</figcaption>
 </figure>
 <figure data-city="haridwar" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%201.jpeg" data-gallery aria-label="Enlarge photo: Har Ki Pauri, Haridwar">
     <img src="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%201.jpeg" alt="Har Ki Pauri, Haridwar" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">23</span>Har Ki Pauri, Haridwar</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">59</span>Har Ki Pauri, Haridwar</figcaption>
 </figure>
 <figure data-city="haridwar" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%202.jpeg" data-gallery aria-label="Enlarge photo: Har Ki Pauri, Haridwar">
     <img src="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%202.jpeg" alt="Har Ki Pauri, Haridwar" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">24</span>Har Ki Pauri, Haridwar</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">60</span>Har Ki Pauri, Haridwar</figcaption>
 </figure>
 <figure data-city="haridwar" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%203.jpeg" data-gallery aria-label="Enlarge photo: Har Ki Pauri, Haridwar">
     <img src="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%203.jpeg" alt="Har Ki Pauri, Haridwar" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">25</span>Har Ki Pauri, Haridwar</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">61</span>Har Ki Pauri, Haridwar</figcaption>
 </figure>
 <figure data-city="haridwar" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%204.jpeg" data-gallery aria-label="Enlarge photo: Har Ki Pauri, Haridwar">
     <img src="../photos/india/sep-2024/Haridwar/Har%20Ki%20Pauri%204.jpeg" alt="Har Ki Pauri, Haridwar" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">26</span>Har Ki Pauri, Haridwar</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">62</span>Har Ki Pauri, Haridwar</figcaption>
 </figure>
 
 <figure data-city="rishikesh" data-jpeg-extension-fallback>
@@ -254,35 +549,35 @@
     <img src="../photos/india/sep-2024/Rishikesh/Ganga%20Ghat%2C%20Rishikesh%20-%20Ram%20Jhula.jpeg" alt="Ganga Ghat at Ram Jhula, Rishikesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">27</span>Ganga Ghat at Ram Jhula, Rishikesh</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">63</span>Ganga Ghat at Ram Jhula, Rishikesh</figcaption>
 </figure>
 <figure data-city="rishikesh" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Rishikesh/Hotel%20-%20Rishikesh%20-%20Himalayan%20Foothills%20view%201.jpeg" data-gallery aria-label="Enlarge photo: Himalayan Foothills from the Hotel, Rishikesh">
     <img src="../photos/india/sep-2024/Rishikesh/Hotel%20-%20Rishikesh%20-%20Himalayan%20Foothills%20view%201.jpeg" alt="Himalayan Foothills from the Hotel, Rishikesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">28</span>Himalayan Foothills from the Hotel, Rishikesh</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">64</span>Himalayan Foothills from the Hotel, Rishikesh</figcaption>
 </figure>
 <figure data-city="rishikesh" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Rishikesh/Hotel%20-%20Rishikesh%20-%20Himalayan%20Foothills%20view%202.jpeg" data-gallery aria-label="Enlarge photo: Himalayan Foothills from the Hotel, Rishikesh">
     <img src="../photos/india/sep-2024/Rishikesh/Hotel%20-%20Rishikesh%20-%20Himalayan%20Foothills%20view%202.jpeg" alt="Himalayan Foothills from the Hotel, Rishikesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">29</span>Himalayan Foothills from the Hotel, Rishikesh</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">65</span>Himalayan Foothills from the Hotel, Rishikesh</figcaption>
 </figure>
 <figure data-city="rishikesh" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Rishikesh/Hotel%20-%20Rishikesh%20-%20Himalayan%20Foothills%20view%203.jpeg" data-gallery aria-label="Enlarge photo: Himalayan Foothills from the Hotel, Rishikesh">
     <img src="../photos/india/sep-2024/Rishikesh/Hotel%20-%20Rishikesh%20-%20Himalayan%20Foothills%20view%203.jpeg" alt="Himalayan Foothills from the Hotel, Rishikesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">30</span>Himalayan Foothills from the Hotel, Rishikesh</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">66</span>Himalayan Foothills from the Hotel, Rishikesh</figcaption>
 </figure>
 <figure data-city="rishikesh" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Rishikesh/Suspension%20bridge%20over%20the%20River%20Ganga%20-%20Ram%20Jhula.jpeg" data-gallery aria-label="Enlarge photo: Ram Jhula Suspension Bridge, Rishikesh">
     <img src="../photos/india/sep-2024/Rishikesh/Suspension%20bridge%20over%20the%20River%20Ganga%20-%20Ram%20Jhula.jpeg" alt="Ram Jhula Suspension Bridge, Rishikesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">31</span>Ram Jhula Suspension Bridge, Rishikesh</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">67</span>Ram Jhula Suspension Bridge, Rishikesh</figcaption>
 </figure>
 
 <figure data-city="rishikesh" data-jpeg-extension-fallback>
@@ -290,7 +585,7 @@
     <img src="../photos/india/sep-2024/Rishikesh/Ganga%20Aarti.jpeg" alt="Ganga Aarti, Rishikesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">32</span>Ganga Aarti, Rishikesh</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">68</span>Ganga Aarti, Rishikesh</figcaption>
 </figure>
 
 <figure data-city="rishikesh" data-jpeg-extension-fallback>
@@ -298,7 +593,7 @@
     <img src="../photos/india/sep-2024/Rishikesh/Shri%20Ganesh%20Temple%2C%20Triveni%20Ghat%20Area.jpeg" alt="Shri Ganesh Temple, Triveni Ghat Area, Rishikesh" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">33</span>Shri Ganesh Temple, Triveni Ghat Area, Rishikesh</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">69</span>Shri Ganesh Temple, Triveni Ghat Area, Rishikesh</figcaption>
 </figure>
 
 <figure data-city="kashi" data-jpeg-extension-fallback>
@@ -306,14 +601,14 @@
     <img src="../photos/india/sep-2024/Kasi/Wat%20Thai%20Sarnath%20%28Thai%20Buddha%20Vihara%29%20-%2080%20foot%20standing%20Buddha%20statue.jpeg" alt="Standing Buddha, Wat Thai Sarnath, Kashi (Varanasi)" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">34</span>Standing Buddha, Wat Thai Sarnath, Kashi (Varanasi)</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">70</span>Standing Buddha, Wat Thai Sarnath, Kashi (Varanasi)</figcaption>
 </figure>
 <figure data-city="kashi" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Kasi/Wat%20Thai%20Sarnath%20%28Thai%20Buddha%20Vihara%29%20-%20Ashoka%20Lion%20Capital%20Replica.jpeg" data-gallery aria-label="Enlarge photo: Ashoka Lion Capital Replica, Wat Thai Sarnath, Kashi (Varanasi)">
     <img src="../photos/india/sep-2024/Kasi/Wat%20Thai%20Sarnath%20%28Thai%20Buddha%20Vihara%29%20-%20Ashoka%20Lion%20Capital%20Replica.jpeg" alt="Ashoka Lion Capital Replica, Wat Thai Sarnath, Kashi (Varanasi)" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">35</span>Ashoka Lion Capital Replica, Wat Thai Sarnath, Kashi (Varanasi)</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">71</span>Ashoka Lion Capital Replica, Wat Thai Sarnath, Kashi (Varanasi)</figcaption>
 </figure>
 
 <figure data-city="kashi">
@@ -321,7 +616,7 @@
     <img src="../photos/india/sep-2024/Kasi/Kashi%20Vishwanathan%20Temple.png" alt="Kashi Vishwanathan Temple, Varanasi" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">36</span>Kashi Vishwanathan Temple, Varanasi</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">72</span>Kashi Vishwanathan Temple, Varanasi</figcaption>
 </figure>
 
 <figure data-city="mathura" data-jpeg-extension-fallback>
@@ -329,14 +624,14 @@
     <img src="../photos/india/sep-2024/Madura/Shri%20Krishna%20Janmabhoomi%20Temple%201.jpeg" alt="Shri Krishna Janmabhoomi Temple, Mathura" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">37</span><span>Shri Krishna Janmabhoomi Temple, Mathura<small class="place-description">Revered in Hindu tradition as the birthplace of Lord Krishna.</small></span></figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">73</span><span>Shri Krishna Janmabhoomi Temple, Mathura<small class="place-description">Revered in Hindu tradition as the birthplace of Lord Krishna.</small></span></figcaption>
 </figure>
 <figure data-city="mathura" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Madura/Shri%20Krishna%20Janmabhoomi%20Temple%202.jpeg" data-gallery aria-label="Enlarge photo: Shri Krishna Janmabhoomi Temple, Mathura">
     <img src="../photos/india/sep-2024/Madura/Shri%20Krishna%20Janmabhoomi%20Temple%202.jpeg" alt="Shri Krishna Janmabhoomi Temple, Mathura" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">38</span><span>Shri Krishna Janmabhoomi Temple, Mathura<small class="place-description">Revered in Hindu tradition as the birthplace of Lord Krishna.</small></span></figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">74</span><span>Shri Krishna Janmabhoomi Temple, Mathura<small class="place-description">Revered in Hindu tradition as the birthplace of Lord Krishna.</small></span></figcaption>
 </figure>
 
 <figure data-city="vrindavan">
@@ -344,21 +639,21 @@
     <img src="../photos/india/sep-2024/Virundhavan/Nidhivan.png" alt="Nidhivan, Vrindavan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">39</span><span>Nidhivan, Vrindavan<small class="place-description">A sacred grove where, according to local tradition, Radha and Krishna perform the Raas Leela.</small></span></figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">75</span><span>Nidhivan, Vrindavan<small class="place-description">A sacred grove where, according to local tradition, Radha and Krishna perform the Raas Leela.</small></span></figcaption>
 </figure>
 <figure data-city="vrindavan" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Virundhavan/Hotel.jpeg" data-gallery aria-label="Enlarge photo: Hotel, Vrindavan">
     <img src="../photos/india/sep-2024/Virundhavan/Hotel.jpeg" alt="Hotel, Vrindavan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">40</span>Hotel, Vrindavan</figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">76</span>Hotel, Vrindavan</figcaption>
 </figure>
 <figure data-city="vrindavan" data-jpeg-extension-fallback>
   <a class="gallery-image" href="../photos/india/sep-2024/Virundhavan/Prem%20Mandir.jpeg" data-gallery aria-label="Enlarge photo: Prem Mandir, Vrindavan">
     <img src="../photos/india/sep-2024/Virundhavan/Prem%20Mandir.jpeg" alt="Prem Mandir, Vrindavan" loading="lazy" decoding="async">
     <span class="image-expand" aria-hidden="true"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18 18 6M8 6h10v10"/></svg></span>
   </a>
-  <figcaption><span class="plate-number" aria-hidden="true">41</span><span>Prem Mandir, Vrindavan<small class="place-description">Built of white Italian marble, with carvings and sculptures depicting scenes from Lord Krishna’s life.</small></span></figcaption>
+  <figcaption><span class="plate-number" aria-hidden="true">77</span><span>Prem Mandir, Vrindavan<small class="place-description">Built of white Italian marble, with carvings and sculptures depicting scenes from Lord Krishna’s life.</small></span></figcaption>
 </figure>
     </div>
   </section>
@@ -383,24 +678,46 @@
 <script>
 (() => {
   const filters = document.querySelector('#place-filters');
+  const agraFilters = document.querySelector('#agra-filters');
   const gallery = document.querySelector('#photos');
   const count = document.querySelector('#photo-count');
   const photos = [...gallery.querySelectorAll(':scope > figure')];
   const buttons = [...filters.querySelectorAll('button[data-place]')];
+  const agraButtons = [...agraFilters.querySelectorAll('button[data-place]')];
+  let city = 'all';
+  let topic = 'all';
   let shown = photos;
+
+  function update() {
+    agraFilters.hidden = city !== 'agra';
+    for (const button of buttons) {
+      button.setAttribute('aria-pressed', String(button.dataset.place === city));
+    }
+    for (const button of agraButtons) {
+      button.setAttribute('aria-pressed', String(button.dataset.place === topic));
+    }
+    shown = photos.filter(figure => {
+      const match = (city === 'all' || figure.dataset.city === city)
+        && (city !== 'agra' || topic === 'all' || figure.dataset.topic === topic);
+      figure.hidden = !match;
+      return match;
+    });
+    count.textContent = `${shown.length} ${shown.length === 1 ? 'photo' : 'photos'}`;
+  }
 
   filters.hidden = false;
   filters.addEventListener('click', event => {
     const button = event.target.closest('button[data-place]');
     if (!button || !filters.contains(button)) return;
-    const place = button.dataset.place;
-    for (const other of buttons) other.setAttribute('aria-pressed', String(other === button));
-    shown = photos.filter(figure => {
-      const match = place === 'all' || figure.dataset.city === place;
-      figure.hidden = !match;
-      return match;
-    });
-    count.textContent = `${shown.length} ${shown.length === 1 ? 'photo' : 'photos'}`;
+    city = button.dataset.place;
+    topic = 'all';
+    update();
+  });
+  agraFilters.addEventListener('click', event => {
+    const button = event.target.closest('button[data-place]');
+    if (city !== 'agra' || !button || !agraFilters.contains(button)) return;
+    topic = button.dataset.place;
+    update();
   });
 
   const dialog = document.querySelector('#lightbox');
