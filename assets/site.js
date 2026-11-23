@@ -1,22 +1,39 @@
 (() => {
-  const filters = document.querySelector('.filters');
-  if (filters) {
-    const buttons = [...filters.querySelectorAll('[data-filter]')];
+  const yearFilters = document.querySelector('#year-filters');
+  const countryFilters = document.querySelector('#country-filters');
+  if (yearFilters && countryFilters) {
+    const yearButtons = [...yearFilters.querySelectorAll('[data-filter]')];
+    const countryButtons = [...countryFilters.querySelectorAll('[data-country]')];
     const cards = [...document.querySelectorAll('.trip-card')];
     const status = document.querySelector('#filter-status');
-    filters.hidden = false;
-    filters.addEventListener('click', (event) => {
+    let year = 'all';
+    let country = 'all';
+    function update() {
+      yearButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === year)));
+      countryButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.country === country)));
+      let count = 0;
+      cards.forEach(card => {
+        card.hidden = !((year === 'all' || card.dataset.year === year) &&
+                        (country === 'all' || card.dataset.country === country));
+        if (!card.hidden) count++;
+      });
+      if (status) status.textContent = `${count} ${count === 1 ? 'trip' : 'trips'} shown.`;
+    }
+    yearFilters.hidden = false;
+    countryFilters.hidden = false;
+    yearFilters.addEventListener('click', event => {
       const button = event.target.closest('button[data-filter]');
-      if (!button) return;
-      const year = button.dataset.filter;
-      let matches = 0;
-      for (const other of buttons) other.setAttribute('aria-pressed', String(other === button));
-      for (const card of cards) {
-        card.hidden = year !== 'all' && card.dataset.year !== year;
-        if (!card.hidden) matches++;
-      }
-      status.textContent = `${matches} ${matches === 1 ? 'trip' : 'trips'} shown.`;
+      if (!button || !yearFilters.contains(button)) return;
+      year = button.dataset.filter;
+      update();
     });
+    countryFilters.addEventListener('click', event => {
+      const button = event.target.closest('button[data-country]');
+      if (!button || !countryFilters.contains(button)) return;
+      country = button.dataset.country;
+      update();
+    });
+    update();
   }
 
   const photos = [...document.querySelectorAll('[data-gallery]')];

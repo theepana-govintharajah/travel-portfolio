@@ -153,3 +153,9 @@ button { font: inherit; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* Front-page country filters */
+.country-filter-section { margin: 22px 0 20px; }
+.country-filter-label { margin: 0 0 11px; font-size: .85rem; font-weight: 600; }
+#country-filters button { display: inline-flex; align-items: center; gap: 5px; }
+.trip-card[hidden] { display: none !important; }

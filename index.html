@@ -30,7 +30,7 @@
         <p class="hero-description">Different countries, countless memories. Every destination holds a story, and every journey becomes a part of mine.</p>
         <a class="hero-button" href="#trips">Explore the trips <span aria-hidden="true">↓</span></a>
       </div>
-      <p class="hero-caption"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>UAE desert </p>
+      <p class="hero-caption"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>UAE desert</p>
     </div>
     <div class="stats" aria-label="Journal at a glance">
       <div><strong>07</strong><span>Trips</span></div>
@@ -42,11 +42,22 @@
     <p class="eyebrow section-kicker"><span></span> THE TRIP INDEX</p>
     <div class="index-heading">
       <div><h2 id="index-title">Journeys</h2><p>Pick a trip to open its photo album.</p></div>
-      <div class="filters" role="group" aria-label="Filter trips by year" hidden><button type="button" data-filter="all" aria-pressed="true">All years</button><button type="button" data-filter="2024" aria-pressed="false">2024</button><button type="button" data-filter="2025" aria-pressed="false">2025</button><button type="button" data-filter="2026" aria-pressed="false">2026</button></div>
+      <div class="filters" id="year-filters" role="group" aria-label="Filter trips by year" hidden><button type="button" data-filter="all" aria-pressed="true">All years</button><button type="button" data-filter="2024" aria-pressed="false">2024</button><button type="button" data-filter="2025" aria-pressed="false">2025</button><button type="button" data-filter="2026" aria-pressed="false">2026</button></div>
+    </div>
+    <div class="country-filter-section">
+      <p class="country-filter-label">Explore by country</p>
+      <div class="filters" id="country-filters" role="group" aria-label="Filter trips by country" hidden>
+        <button type="button" data-country="all" aria-pressed="true">🌍 All countries</button>
+        <button type="button" data-country="uae" aria-pressed="false">🇦🇪 UAE</button>
+        <button type="button" data-country="india" aria-pressed="false">🇮🇳 India</button>
+        <button type="button" data-country="singapore" aria-pressed="false">🇸🇬 Singapore</button>
+        <button type="button" data-country="malaysia" aria-pressed="false">🇲🇾 Malaysia</button>
+        <button type="button" data-country="thailand" aria-pressed="false">🇹🇭 Thailand</button>
+      </div>
     </div>
     <p class="sr-only" id="filter-status" aria-live="polite"></p>
     <ul class="trip-grid">
-<li class="trip-card" data-year="2024">
+<li class="trip-card" data-year="2024" data-country="uae">
   <a href="trips/uae-february-2024.html" class="card-link">
     <div class="card-photo"><img src="photos/uae/feb-2024/dubai-skyline.jpg" alt="" loading="lazy" decoding="async"><span class="card-stamp">NO. 01</span></div>
     <div class="card-body">
@@ -58,7 +69,7 @@
   </a>
 </li>
 
-<li class="trip-card" data-year="2024">
+<li class="trip-card" data-year="2024" data-country="india">
   <a href="trips/north-india-september-2024.html" class="card-link">
     <div class="card-photo"><img src="photos/india/sep-2024/taj-mahal.jpg" alt="" loading="lazy" decoding="async"><span class="card-stamp">NO. 02</span></div>
     <div class="card-body">
@@ -70,7 +81,7 @@
   </a>
 </li>
 
-<li class="trip-card" data-year="2024">
+<li class="trip-card" data-year="2024" data-country="uae">
   <a href="trips/uae-november-2024.html" class="card-link">
     <div class="card-photo"><img src="photos/uae/nov-2024/abu-dhabi-mosque.jpg" alt="" loading="lazy" decoding="async"><span class="card-stamp">NO. 03</span></div>
     <div class="card-body">
@@ -82,7 +93,7 @@
   </a>
 </li>
 
-<li class="trip-card" data-year="2025">
+<li class="trip-card" data-year="2025" data-country="india">
   <a href="trips/south-india-june-2025.html" class="card-link">
     <div class="card-photo"><img src="photos/india/jun-2025/tamil-nadu-temple.jpg" alt="" loading="lazy" decoding="async"><span class="card-stamp">NO. 04</span></div>
     <div class="card-body">
@@ -94,7 +105,7 @@
   </a>
 </li>
 
-<li class="trip-card" data-year="2025">
+<li class="trip-card" data-year="2025" data-country="singapore">
   <a href="trips/singapore-august-2025.html" class="card-link">
     <div class="card-photo"><img src="photos/singapore/aug-2025/marina-bay.jpg" alt="" loading="lazy" decoding="async"><span class="card-stamp">NO. 05</span></div>
     <div class="card-body">
@@ -106,7 +117,7 @@
   </a>
 </li>
 
-<li class="trip-card" data-year="2026">
+<li class="trip-card" data-year="2026" data-country="malaysia">
   <a href="trips/malaysia-january-2026.html" class="card-link">
     <div class="card-photo"><img src="photos/malaysia/jan-2026/kuala-lumpur.jpg" alt="" loading="lazy" decoding="async"><span class="card-stamp">NO. 06</span></div>
     <div class="card-body">
@@ -118,7 +129,7 @@
   </a>
 </li>
 
-<li class="trip-card" data-year="2026">
+<li class="trip-card" data-year="2026" data-country="thailand">
   <a href="trips/thailand-january-2026.html" class="card-link">
     <div class="card-photo"><img src="photos/thailand/jan-2026/bangkok-temple.jpg" alt="" loading="lazy" decoding="async"><span class="card-stamp">NO. 07</span></div>
     <div class="card-body">
