@@ -301,16 +301,34 @@
           "slug": "trincomalee",
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/coast.jpg",
-              "place": "Tropical coastline"
+              "file": "photos/sri-lanka/Trinco/1.jpeg",
+              "place": "Thirukoneshwaram Temple, Trinco",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/kovil.jpg",
-              "place": "Kovil architecture"
+              "file": "photos/sri-lanka/Trinco/2.jpeg",
+              "place": "Thirukoneshwaram Temple, Trinco",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/lagoon.jpg",
-              "place": "Lagoon and mangroves"
+              "file": "photos/sri-lanka/Trinco/3.jpeg",
+              "place": "Thirukoneshwaram Temple, Trinco",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Trinco/4.jpeg",
+              "place": "Thirukoneshwaram Temple, Trinco",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Trinco/Sapparam Thiruvizha.jpeg",
+              "place": "Sapparam Thiruvizha · Thirukoneshwaram Temple, Trinco",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Trinco/Temple Chariot Festival.jpeg",
+              "place": "Temple Chariot Festival · Thirukoneshwaram Temple, Trinco",
+              "detect_extension": true
             }
           ]
         }
