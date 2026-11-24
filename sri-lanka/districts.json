@@ -67,16 +67,164 @@
           "slug": "kandy",
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/tea-hills.jpg",
-              "place": "Tea-covered hills"
+              "file": "photos/sri-lanka/Kandy/Sri Dalada Maligawa.jpeg",
+              "place": "Sri Dalada Maligawa (Temple of the Sacred Tooth Relic)",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/stupa.jpg",
-              "place": "Ancient stupa"
+              "file": "photos/sri-lanka/Kandy/Kandy lake near Sri Dalada Maligawa 1.jpeg",
+              "place": "Kandy Lake near Sri Dalada Maligawa",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/waterfall.jpg",
-              "place": "Forest waterfall"
+              "file": "photos/sri-lanka/Kandy/Kandy lake near Sri Dalada Maligawa 2.jpeg",
+              "place": "Kandy Lake near Sri Dalada Maligawa",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Kandy lake near Sri Dalada Maligawa 3.jpeg",
+              "place": "Kandy Lake near Sri Dalada Maligawa",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Kandy lake near Sri Dalada Maligawa 4.jpeg",
+              "place": "Kandy Lake near Sri Dalada Maligawa",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Kandy lake near Sri Dalada Maligawa 5.jpeg",
+              "place": "Kandy Lake near Sri Dalada Maligawa",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Kandy City Center.jpeg",
+              "place": "Kandy City Centre",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Traditional Giant Wheel Ride for Christmas.jpeg",
+              "place": "Traditional Giant Wheel Ride for Christmas",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Hanthana Hiking - FIT 19.jpeg",
+              "place": "Hanthana Hiking",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Hanthana Hiking.jpeg",
+              "place": "Hanthana Hiking",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 1.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 2.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 3.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 4.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 5.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 6.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 7.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 8.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 9.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peradenia Botanical Garden 10.jpeg",
+              "place": "Royal Botanic Gardens, Peradeniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 1.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 2.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 3.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 4.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 5.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 6.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 7.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 8.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 9.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 10.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 11.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kandy/Peoples Bank Holiday Home - Kandy 12.jpeg",
+              "place": "People’s Bank Holiday Home, Kandy",
+              "detect_extension": true
             }
           ]
         },
