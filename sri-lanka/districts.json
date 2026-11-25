@@ -469,6 +469,11 @@
         {
           "name": "Trincomalee",
           "slug": "trincomalee",
+          "cover": {
+            "file": "photos/sri-lanka/Trinco/cover image.jpeg",
+            "place": "Trincomalee coastline",
+            "detect_extension": true
+          },
           "photos": [
             {
               "file": "photos/sri-lanka/Trinco/1.jpeg",
