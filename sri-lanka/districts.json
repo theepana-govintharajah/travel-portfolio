@@ -691,17 +691,129 @@
         {
           "name": "Hambantota",
           "slug": "hambantota",
-          "visible": false,
+          "visible": true,
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/coast.jpg",
-              "place": "Tropical coastline"
+              "file": "photos/sri-lanka/Hambantota/Batathagro technology park 1.jpeg",
+              "place": "Batatha Agro Technology Park",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/lagoon.jpg",
-              "place": "Lagoon and mangroves"
+              "file": "photos/sri-lanka/Hambantota/Batathagro technology park 2.jpeg",
+              "place": "Batatha Agro Technology Park",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Batathagro technology park 3.jpeg",
+              "place": "Batatha Agro Technology Park",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 1.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 2.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 3.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 4.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 5.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 6.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 7.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 8.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 9.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 10.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 11.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 12.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 13.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Dry Zone Botanical garden 14.jpeg",
+              "place": "Dry Zone Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Madunagala Hot Water Springs 1.jpeg",
+              "place": "Madunagala Hot Water Springs",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Madunagala Hot Water Springs 2.jpeg",
+              "place": "Madunagala Hot Water Springs",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Madunagala Hot Water Springs 3.jpeg",
+              "place": "Madunagala Hot Water Springs",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Ridiyagama safari park 1.jpeg",
+              "place": "Ridiyagama Safari Park",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Ridiyagama safari park 2.jpeg",
+              "place": "Ridiyagama Safari Park",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Hambantota/Ridiyagama safari park 3.jpeg",
+              "place": "Ridiyagama Safari Park",
+              "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Hambantota/cover image.jpeg",
+            "place": "Hambantota",
+            "detect_extension": true
+          }
         }
       ]
     },
