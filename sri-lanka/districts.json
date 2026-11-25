@@ -575,6 +575,62 @@
               "detect_extension": true,
               "category": "tourist-places",
               "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Drama/1.jpeg",
+              "place": "University Drama - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "drama"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Drama/2.jpeg",
+              "place": "University Drama - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "drama"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Drama/3.jpeg",
+              "place": "University Drama - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "drama"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Drama/4.jpeg",
+              "place": "University Drama - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "drama"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Drama/5.jpeg",
+              "place": "University Drama - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "drama"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Drama/6.jpeg",
+              "place": "University Drama - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "drama"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Drama/7.jpeg",
+              "place": "University Drama - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "drama"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Drama/8.jpeg",
+              "place": "University Drama - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "drama"
             }
           ],
           "gallery_filters": [
@@ -634,7 +690,13 @@
             },
             {
               "id": "university",
-              "label": "University"
+              "label": "University",
+              "subfilters": [
+                {
+                  "id": "drama",
+                  "label": "Drama"
+                }
+              ]
             }
           ]
         },
