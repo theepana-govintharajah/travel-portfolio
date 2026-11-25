@@ -1060,7 +1060,20 @@
                 }
               ]
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Colombo/Tourist places/cover image.jpeg",
+            "place": "Colombo district cover",
+            "detect_extension": true,
+            "extra_extensions": [
+              ".png",
+              ".PNG",
+              ".webp",
+              ".WEBP",
+              ".avif",
+              ".AVIF"
+            ]
+          }
         },
         {
           "name": "Gampaha",

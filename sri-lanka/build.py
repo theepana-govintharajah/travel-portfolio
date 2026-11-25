@@ -30,7 +30,7 @@ def photo_fallback(photo):
     if not photo.get("detect_extension"):
         return ""
     filename = PurePosixPath(photo["file"])
-    suffixes = (".jpeg", ".jpg", ".JPEG", ".JPG", ".Jpeg", ".Jpg")
+    suffixes = (".jpeg", ".jpg", ".JPEG", ".JPG", ".Jpeg", ".Jpg") + tuple(photo.get("extra_extensions", ()))
     attrs = " ".join(path_url(filename.with_suffix(ext).as_posix()) for ext in suffixes
                      if ext != filename.suffix)
     handler = ("const list=this.dataset.fallback.split(' ');const next=list.shift();"
