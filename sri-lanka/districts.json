@@ -531,14 +531,16 @@
           "slug": "puttalam",
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/lagoon.jpg",
-              "place": "Lagoon and mangroves"
-            },
-            {
-              "file": "assets/sri-lanka-samples/coast.jpg",
-              "place": "Tropical coastline"
+              "file": "photos/sri-lanka/Puttalam/Munneswaram temple, chilaw.jpeg",
+              "place": "Munneswaram Temple, Chilaw",
+              "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Puttalam/cover photo.jpeg",
+            "place": "Puttalam",
+            "detect_extension": true
+          }
         }
       ]
     },
