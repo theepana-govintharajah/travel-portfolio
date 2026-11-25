@@ -2593,6 +2593,26 @@
               "detect_extension": true
             },
             {
+              "file": "photos/sri-lanka/Moneragalle/Kataragama 3.jpeg",
+              "place": "Kataragama",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Kataragama 4.jpeg",
+              "place": "Kataragama",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Kataragama 5.jpeg",
+              "place": "Kataragama",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Kataragama 6.jpeg",
+              "place": "Kataragama",
+              "detect_extension": true
+            },
+            {
               "file": "photos/sri-lanka/Moneragalle/Sella kataragama 1.jpeg",
               "place": "Sella Kataragama",
               "detect_extension": true
@@ -2608,6 +2628,16 @@
               "detect_extension": true
             },
             {
+              "file": "photos/sri-lanka/Moneragalle/Sella kataragama 4.jpeg",
+              "place": "Sella Kataragama",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Sella kataragama 5.jpeg",
+              "place": "Sella Kataragama",
+              "detect_extension": true
+            },
+            {
               "file": "photos/sri-lanka/Moneragalle/Elumalayan 1.jpeg",
               "place": "Elumalayan",
               "detect_extension": true
@@ -2615,6 +2645,26 @@
             {
               "file": "photos/sri-lanka/Moneragalle/Elumalayan 2.jpeg",
               "place": "Elumalayan",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Elumalayan 3.jpeg",
+              "place": "Elumalayan",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Lakshmi Devalaya 1.jpeg",
+              "place": "Lakshmi Devalaya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Lakshmi Devalaya 2.jpeg",
+              "place": "Lakshmi Devalaya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Lakshmi Devalaya 3.jpeg",
+              "place": "Lakshmi Devalaya",
               "detect_extension": true
             }
           ],
