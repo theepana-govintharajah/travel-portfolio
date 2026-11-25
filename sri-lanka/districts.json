@@ -470,6 +470,111 @@
               "detect_extension": true,
               "category": "tourist-places",
               "subcategory": "ratmalana-airplane-exhibition"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/1.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/2.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/3.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/4.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/5.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/6.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/7.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/8.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/9.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/10.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/11.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/12.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/13.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/14.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Port city/15.jpeg",
+              "place": "Port City - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "port-city"
             }
           ],
           "gallery_filters": [
@@ -516,6 +621,10 @@
                 {
                   "id": "ratmalana-airplane-exhibition",
                   "label": "Ratmalana Airplane Exhibition"
+                },
+                {
+                  "id": "port-city",
+                  "label": "Port City"
                 }
               ]
             },
