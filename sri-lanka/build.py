@@ -157,6 +157,8 @@ def figure(photo, index, filtered=False):
     note = '<span class="sl-sample-badge">Illustrative sample</span>' if sample(photo) else ""
     attrs = (f' data-category="{escape(photo.get("category", ""))}"'
              f' data-subcategory="{escape(photo.get("subcategory", ""))}"') if filtered else ''
+    if filtered and 'detail' in photo:
+        attrs += f' data-detail="{escape(photo["detail"])}"'
     return f"""<figure{attrs}>
   <a class="gallery-image" href="{src}" data-gallery aria-label="Enlarge photo: {place}">
     <img src="{src}" alt="{alt}" {'fetchpriority="high"' if index == 1 else 'loading="lazy"'} decoding="async"{photo_fallback(photo)}>
@@ -187,6 +189,12 @@ def gallery_controls(filters):
             locations = [button('all', 'All', 'gallery-subcategory')]
             locations += [button(s['id'], s['label'], 'gallery-subcategory') for s in category['subfilters']]
             groups.append(row(locations, f'{label} subfilters', f'data-gallery-parent="{escape(cid)}"'))
+            for sub in category['subfilters']:
+                if sub.get('subfilters'):
+                    details = [button('all', 'All', 'gallery-detail')]
+                    details += [button(s['id'], s['label'], 'gallery-detail') for s in sub['subfilters']]
+                    attrs = f'data-gallery-parent="{escape(cid)}" data-gallery-child="{escape(sub["id"])}"'
+                    groups.append(row(details, f'{sub["label"]} subfilters', attrs))
     return '\n    '.join([row(categories, 'Filter photos by category', 'id="district-gallery-filters"'), *groups])
 
 def district_page(site, districts, i):

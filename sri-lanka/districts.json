@@ -757,6 +757,142 @@
               "detect_extension": true,
               "category": "university",
               "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/1.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/2.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/3.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/4.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/5.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/6.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/7.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/8.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/9.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/10.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/11.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/12.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/13.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/14.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/15.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/16.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2024/17.jpeg",
+              "place": "Birthday 2024 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2024"
             }
           ],
           "gallery_filters": [
@@ -812,7 +948,19 @@
             },
             {
               "id": "celebration",
-              "label": "Celebration"
+              "label": "Celebration",
+              "subfilters": [
+                {
+                  "id": "birthday",
+                  "label": "Birthday",
+                  "subfilters": [
+                    {
+                      "id": "2024",
+                      "label": "2024"
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": "university",

@@ -10,6 +10,7 @@
   const empty = document.querySelector('#district-gallery-empty');
   let category = 'all';
   let subcategory = 'all';
+  let detail = 'all';
   let shown = [];
   let index = 0;
   let opener;
@@ -18,14 +19,19 @@
   function update() {
     categoryButtons.forEach(button => pressed(button, button.dataset.galleryCategory === category));
     groups.forEach(group => {
-      group.hidden = group.dataset.galleryParent !== category;
-      group.querySelectorAll('button[data-gallery-subcategory]').forEach(button =>
-        pressed(button, button.dataset.gallerySubcategory === (group.hidden ? 'all' : subcategory)));
+      const isDetailGroup = Boolean(group.dataset.galleryChild);
+      group.hidden = group.dataset.galleryParent !== category ||
+        (isDetailGroup && group.dataset.galleryChild !== subcategory);
+      const key = isDetailGroup ? 'galleryDetail' : 'gallerySubcategory';
+      const active = group.hidden ? 'all' : isDetailGroup ? detail : subcategory;
+      const selector = isDetailGroup ? 'button[data-gallery-detail]' : 'button[data-gallery-subcategory]';
+      group.querySelectorAll(selector).forEach(button => pressed(button, button.dataset[key] === active));
     });
     shown = [];
     photos.forEach(photo => {
       photo.hidden = !((category === 'all' || photo.dataset.category === category) &&
-        (subcategory === 'all' || photo.dataset.subcategory === subcategory));
+        (subcategory === 'all' || photo.dataset.subcategory === subcategory) &&
+        (detail === 'all' || photo.dataset.detail === detail));
       if (!photo.hidden) shown.push(photo.querySelector('[data-gallery]'));
     });
     count.textContent = `${shown.length} ${shown.length === 1 ? 'photo' : 'photos'}`;
@@ -35,13 +41,21 @@
   categoryButtons.forEach(button => button.addEventListener('click', () => {
     category = button.dataset.galleryCategory;
     subcategory = 'all';
+    detail = 'all';
     update();
   }));
   groups.forEach(group => {
     group.querySelectorAll('button[data-gallery-subcategory]').forEach(button =>
       button.addEventListener('click', () => {
-        if (group.dataset.galleryParent !== category) return;
+        if (group.hidden) return;
         subcategory = button.dataset.gallerySubcategory;
+        detail = 'all';
+        update();
+      }));
+    group.querySelectorAll('button[data-gallery-detail]').forEach(button =>
+      button.addEventListener('click', () => {
+        if (group.hidden) return;
+        detail = button.dataset.galleryDetail;
         update();
       }));
   });
