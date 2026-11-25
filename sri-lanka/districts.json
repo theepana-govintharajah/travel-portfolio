@@ -533,21 +533,214 @@
         {
           "name": "Nuwara Eliya",
           "slug": "nuwara-eliya",
-          "visible": false,
+          "visible": true,
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/tea-hills.jpg",
-              "place": "Tea-covered hills"
+              "file": "photos/sri-lanka/Nuwara Eliya/Gregory park 1.jpeg",
+              "place": "Gregory Park - Nuwara Eliya",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/waterfall.jpg",
-              "place": "Forest waterfall"
+              "file": "photos/sri-lanka/Nuwara Eliya/Gregory park 2.jpeg",
+              "place": "Gregory Park - Nuwara Eliya",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/rice-fields.jpg",
-              "place": "Rice fields"
+              "file": "photos/sri-lanka/Nuwara Eliya/Gregory park 3.jpeg",
+              "place": "Gregory Park - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Gregory park 4.jpeg",
+              "place": "Gregory Park - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Gregory park 5.jpeg",
+              "place": "Gregory Park - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Gregory park 6.jpeg",
+              "place": "Gregory Park - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Hakgala Botanical Garden 1.jpeg",
+              "place": "Hakgala Botanic Gardens - Hakgala - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Hakgala Botanical Garden 2.jpeg",
+              "place": "Hakgala Botanic Gardens - Hakgala - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Hakgala Botanical Garden 3.jpeg",
+              "place": "Hakgala Botanic Gardens - Hakgala - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Hakgala Botanical Garden 4.jpeg",
+              "place": "Hakgala Botanic Gardens - Hakgala - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Peoples bank holiday home.jpeg",
+              "place": "People’s Bank Holiday Home - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Sita Eliya temple 1.jpeg",
+              "place": "Sita Amman Temple - Seetha Eliya - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Sita Eliya temple 2.jpeg",
+              "place": "Sita Amman Temple - Seetha Eliya - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Sita Eliya temple 3.jpeg",
+              "place": "Sita Amman Temple - Seetha Eliya - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Sita Eliya temple 4.jpeg",
+              "place": "Sita Amman Temple - Seetha Eliya - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Sita Eliya temple 5.jpeg",
+              "place": "Sita Amman Temple - Seetha Eliya - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Lovers leep waterfall 1.jpeg",
+              "place": "Lover’s Leap Waterfall - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Lovers leep waterfall 2.jpeg",
+              "place": "Lover’s Leap Waterfall - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Lovers leep waterfall 3.jpeg",
+              "place": "Lover’s Leap Waterfall - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon Plains 1.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon Plains 2.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon Plains 3.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon Plains 4.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon plains 5.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon plains 6.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon Plains 7.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon Plains 8.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon plains 9.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Moon Plains 10.jpeg",
+              "place": "Moon Plains - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Reserviour dam 1.jpeg",
+              "place": "Reservoir Dam - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Reserviour dam 2.jpeg",
+              "place": "Reservoir Dam - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Tea Pedro factory 1.jpeg",
+              "place": "Pedro Tea Factory - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Tea Pedro factory 2.jpeg",
+              "place": "Pedro Tea Factory - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Tea Pedro factory 3.jpeg",
+              "place": "Pedro Tea Factory - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Tea pedro Factory 4.jpeg",
+              "place": "Pedro Tea Factory - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Victorial Park 1.jpeg",
+              "place": "Victoria Park - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Victorial Park 2.jpeg",
+              "place": "Victoria Park - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Victorial Park 3.jpeg",
+              "place": "Victoria Park - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Victorial Park 4.jpeg",
+              "place": "Victoria Park - Nuwara Eliya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Nuwara Eliya/Victorial Park 5.jpeg",
+              "place": "Victoria Park - Nuwara Eliya",
+              "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Nuwara Eliya/cover image.jpeg",
+            "place": "Nuwara Eliya",
+            "detect_extension": true
+          }
         }
       ]
     },
