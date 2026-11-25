@@ -103,9 +103,14 @@ def hub(site, data, districts):
     illustrative = " • illustrative sample" if sample(hero) and hero.get("show_sample_label", True) else ""
     intro = data.get("intro", "Explore the island, one district at a time.")
     hero_intro = f"        <p>{escape(intro)}</p>\n" if intro else ""
-    cards = "\n".join(district_card(d, i) for i, d in enumerate(districts, 1))
-    controls = "\n".join(f'<button type="button" data-province-filter="{slugify(p["name"])}" aria-pressed="false" aria-controls="sl-district-grid">{escape(p["name"])}</button>' for p in provinces)
-    note = '<p class="sample-note sl-covers-note">Illustrative sample covers are used where personal photos haven’t been added.</p>' if data.get("show_cover_note", True) and any(sample(cover(d)) for d in districts) else ""
+    visible = [(i, d) for i, d in enumerate(districts, 1) if d.get("visible", True)]
+    active_provinces = {d["province"] for _, d in visible}
+    count = len(visible)
+    count_label = f"{count} {'district' if count == 1 else 'districts'}"
+    cards = "\n".join(district_card(d, i) for i, d in visible)
+    empty = '<p>No district galleries are listed yet.</p>' if not visible else ""
+    controls = "\n".join(f'<button type="button" data-province-filter="{slugify(p["name"])}" aria-pressed="false" aria-controls="sl-district-grid">{escape(p["name"])}</button>' for p in provinces if p["name"] in active_provinces)
+    note = '<p class="sample-note sl-covers-note">Illustrative sample covers are used where personal photos haven’t been added.</p>' if data.get("show_cover_note", True) and any(sample(cover(d)) for _, d in visible) else ""
     body = f"""
 <main id="main">
   <div class="shell">
@@ -129,7 +134,7 @@ def hub(site, data, districts):
     <p class="eyebrow section-kicker"><span></span> THE ISLAND INDEX</p>
     <div class="index-heading sl-index-heading">
       <div><h2 id="sl-index-title">Districts</h2><p>Open any district to see its photo gallery.</p></div>
-      <p class="sl-results" id="sl-district-count" aria-live="polite">{len(districts)} districts</p>
+      <p class="sl-results" id="sl-district-count" aria-live="polite">{count_label}</p>
     </div>
     <div class="filters sl-filters" id="sl-province-filters" role="group" aria-label="Filter districts by province" hidden>
       <button type="button" data-province-filter="all" aria-pressed="true" aria-controls="sl-district-grid">All provinces</button>
@@ -138,6 +143,7 @@ def hub(site, data, districts):
     <ul class="trip-grid" id="sl-district-grid">
       {cards}
     </ul>
+    {empty}
     {note}
   </section>
 </main>"""
@@ -218,6 +224,7 @@ def validate_photo(photo, missing):
 def main():
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="fail without writing if any listed photo file is missing")
+    parser.add_argument("--index-only", action="store_true", help="update the district index without rewriting gallery pages")
     options = parser.parse_args()
     site = read(SITE / "site.json")
     data = read(HERE / "districts.json")
@@ -237,17 +244,24 @@ def main():
                 raise ValueError(f"Invalid or duplicate district slug: {slug!r}")
             slugs.add(slug)
             entry = {**district, "province": province["name"]}
-            if district.get("cover"):
-                entry["cover"] = validate_photo(district["cover"], missing)
-            entry["photos"] = [validate_photo(photo, missing) for photo in district["photos"]]
+            if type(entry.get("visible", True)) is not bool:
+                raise ValueError(f"District {slug!r}: visible must be true or false")
+            if options.index_only:
+                if entry.get("visible", True) and cover(entry):
+                    entry["cover"] = validate_photo(cover(entry), missing)
+            else:
+                if district.get("cover"):
+                    entry["cover"] = validate_photo(district["cover"], missing)
+                entry["photos"] = [validate_photo(photo, missing) for photo in district["photos"]]
             districts.append(entry)
     if options.check and missing:
         parser.exit(1, "Missing images:\n  " + "\n  ".join(sorted(missing)) + "\n")
     outputs = {"index.html": hub(site, data, districts)}
-    outputs.update({f'{d["slug"]}.html': district_page(site, districts, i) for i, d in enumerate(districts)})
+    if not options.index_only:
+        outputs.update({f'{d["slug"]}.html': district_page(site, districts, i) for i, d in enumerate(districts)})
     for filename, source in outputs.items():
         (HERE / filename).write_text(source, encoding="utf-8")
-    print(f"Built the Sri Lanka hub and {len(districts)} district pages.")
+    print("Built the Sri Lanka index only." if options.index_only else f"Built the Sri Lanka hub and {len(districts)} district pages.")
 
 if __name__ == "__main__":
     main()

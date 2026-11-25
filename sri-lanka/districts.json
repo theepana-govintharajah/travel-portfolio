@@ -14,6 +14,7 @@
         {
           "name": "Colombo",
           "slug": "colombo",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/coast.jpg",
@@ -32,6 +33,7 @@
         {
           "name": "Gampaha",
           "slug": "gampaha",
+          "visible": true,
           "photos": [
             {
               "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 1.jpeg",
@@ -218,6 +220,7 @@
         {
           "name": "Kalutara",
           "slug": "kalutara",
+          "visible": true,
           "photos": [
             {
               "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 1.jpeg",
@@ -339,6 +342,7 @@
         {
           "name": "Kandy",
           "slug": "kandy",
+          "visible": true,
           "photos": [
             {
               "file": "photos/sri-lanka/Kandy/Sri Dalada Maligawa.jpeg",
@@ -510,6 +514,7 @@
         {
           "name": "Matale",
           "slug": "matale",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/sigiriya.jpg",
@@ -528,6 +533,7 @@
         {
           "name": "Nuwara Eliya",
           "slug": "nuwara-eliya",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/tea-hills.jpg",
@@ -551,6 +557,7 @@
         {
           "name": "Galle",
           "slug": "galle",
+          "visible": true,
           "photos": [
             {
               "file": "photos/sri-lanka/Galle/Galle beach 1.jpeg",
@@ -652,6 +659,7 @@
         {
           "name": "Matara",
           "slug": "matara",
+          "visible": true,
           "photos": [
             {
               "file": "photos/sri-lanka/Matara/Devi Nuwera Vihara.jpeg",
@@ -683,6 +691,7 @@
         {
           "name": "Hambantota",
           "slug": "hambantota",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/coast.jpg",
@@ -702,6 +711,7 @@
         {
           "name": "Jaffna",
           "slug": "jaffna",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/kovil.jpg",
@@ -720,6 +730,7 @@
         {
           "name": "Mannar",
           "slug": "mannar",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/lagoon.jpg",
@@ -734,6 +745,7 @@
         {
           "name": "Vavuniya",
           "slug": "vavuniya",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/rice-fields.jpg",
@@ -748,6 +760,7 @@
         {
           "name": "Mullaitivu",
           "slug": "mullaitivu",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/coast.jpg",
@@ -762,6 +775,7 @@
         {
           "name": "Kilinochchi",
           "slug": "kilinochchi",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/rice-fields.jpg",
@@ -781,6 +795,7 @@
         {
           "name": "Batticaloa",
           "slug": "batticaloa",
+          "visible": true,
           "photos": [
             {
               "file": "photos/sri-lanka/baticalo/Batticaloa Gate.jpeg",
@@ -812,6 +827,7 @@
         {
           "name": "Ampara",
           "slug": "ampara",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/coast.jpg",
@@ -826,6 +842,7 @@
         {
           "name": "Trincomalee",
           "slug": "trincomalee",
+          "visible": true,
           "cover": {
             "file": "photos/sri-lanka/Trinco/cover image.jpeg",
             "place": "Trincomalee coastline",
@@ -872,6 +889,7 @@
         {
           "name": "Kurunegala",
           "slug": "kurunegala",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/rice-fields.jpg",
@@ -886,6 +904,7 @@
         {
           "name": "Puttalam",
           "slug": "puttalam",
+          "visible": true,
           "photos": [
             {
               "file": "photos/sri-lanka/Puttalam/Munneswaram temple, chilaw.jpeg",
@@ -907,6 +926,7 @@
         {
           "name": "Anuradhapura",
           "slug": "anuradhapura",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/stupa.jpg",
@@ -925,6 +945,7 @@
         {
           "name": "Polonnaruwa",
           "slug": "polonnaruwa",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/stupa.jpg",
@@ -944,6 +965,7 @@
         {
           "name": "Badulla",
           "slug": "badulla",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/tea-hills.jpg",
@@ -962,6 +984,7 @@
         {
           "name": "Moneragala",
           "slug": "moneragala",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/rice-fields.jpg",
@@ -981,6 +1004,7 @@
         {
           "name": "Ratnapura",
           "slug": "ratnapura",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/waterfall.jpg",
@@ -995,6 +1019,7 @@
         {
           "name": "Kegalle",
           "slug": "kegalle",
+          "visible": false,
           "photos": [
             {
               "file": "assets/sri-lanka-samples/waterfall.jpg",
