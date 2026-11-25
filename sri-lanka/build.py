@@ -50,8 +50,9 @@ def ordinal(idx):
 def site_brand(site):
     return f'<a class="brand" href="../index.html"><img class="sl-compass" src="../assets/compass.svg" alt=""><span>{escape(site["name"])}<small>TRAVEL JOURNAL</small></span></a>'
 
-def layout(site, title, description, body, district=False):
+def layout(site, title, description, body, district=False, filtered=False):
     brand = site_brand(site)
+    script = 'gallery-filter.js' if filtered else '../assets/site.js' if district else 'district-filter.js'
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -63,7 +64,7 @@ def layout(site, title, description, body, district=False):
   <link rel="icon" href="../assets/compass.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/styles.css">
   <link rel="stylesheet" href="../assets/sri-lanka.css">
-  <script src="{('../assets/site.js' if district else 'district-filter.js')}" defer></script>
+  <script src="{script}" defer></script>
 </head>
 <body id="top" class="sl-section">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -149,12 +150,14 @@ def hub(site, data, districts):
 </main>"""
     return layout(site, "Sri Lanka", "Explore Sri Lanka’s district photo galleries by province.", body)
 
-def figure(photo, index):
+def figure(photo, index, filtered=False):
     src = path_url(photo["file"])
     place = escape(photo["place"])
     alt = escape(photo.get("alt", photo["place"]))
     note = '<span class="sl-sample-badge">Illustrative sample</span>' if sample(photo) else ""
-    return f"""<figure>
+    attrs = (f' data-category="{escape(photo.get("category", ""))}"'
+             f' data-subcategory="{escape(photo.get("subcategory", ""))}"') if filtered else ''
+    return f"""<figure{attrs}>
   <a class="gallery-image" href="{src}" data-gallery aria-label="Enlarge photo: {place}">
     <img src="{src}" alt="{alt}" {'fetchpriority="high"' if index == 1 else 'loading="lazy"'} decoding="async"{photo_fallback(photo)}>
     {note}<span class="image-expand" aria-hidden="true">{UP_RIGHT}</span>
@@ -165,13 +168,39 @@ def figure(photo, index):
 def district_link(target, label, cls):
     return f'<a class="trip-step {cls}" href="{target["slug"]}.html"><span class="step-arrow">{ARROW}</span><span><small>{label}</small><strong>{escape(target["name"])}</strong></span></a>' if target else ""
 
+def gallery_controls(filters):
+    gallery = 'district-gallery'
+    def button(value, label, key):
+        return (f'<button type="button" data-{key}="{escape(value)}" '
+                f'aria-controls="{gallery}" aria-pressed="{str(value == "all").lower()}">{escape(label)}</button>')
+
+    def row(buttons, label, extra=''):
+        return (f'<div class="filters sl-filters" role="group" aria-label="{escape(label)}" {extra} hidden>\n'
+                f'      {" ".join(buttons)}\n    </div>')
+
+    categories = [button('all', 'All', 'gallery-category')]
+    groups = []
+    for category in filters:
+        cid, label = category['id'], category['label']
+        categories.append(button(cid, label, 'gallery-category'))
+        if category.get('subfilters'):
+            locations = [button('all', 'All', 'gallery-subcategory')]
+            locations += [button(s['id'], s['label'], 'gallery-subcategory') for s in category['subfilters']]
+            groups.append(row(locations, f'{label} subfilters', f'data-gallery-parent="{escape(cid)}"'))
+    return '\n    '.join([row(categories, 'Filter photos by category', 'id="district-gallery-filters"'), *groups])
+
 def district_page(site, districts, i):
     d = districts[i]
     name = escape(d["name"])
     photos = d["photos"]
+    filters = d.get("gallery_filters", [])
     note = '<p class="gallery-note">Illustrative samples are placeholders, not photos taken in this district.</p>' if any(sample(p) for p in photos) else ""
-    rendered_photos = "\n".join(figure(p, j) for j, p in enumerate(photos, 1))
-    rendered_photos = f'<div class="gallery">{rendered_photos}</div>' if photos else '<p class="gallery-note">No photos have been added to this gallery yet.</p>'
+    rendered_photos = "\n".join(figure(p, j, bool(filters)) for j, p in enumerate(photos, 1))
+    grid_attrs = ' id="district-gallery"' if filters else ''
+    rendered_photos = f'<div class="gallery"{grid_attrs}>{rendered_photos}</div>' if photos or filters else '<p class="gallery-note">No photos have been added to this gallery yet.</p>'
+    status_attrs = ' id="district-gallery-count" role="status" aria-atomic="true"' if filters else ''
+    controls = ('\n    ' + gallery_controls(filters)) if filters else ''
+    empty = ('\n    <p class="gallery-note" id="district-gallery-empty"' + (' hidden' if photos else '') + '>No photos have been added to this selection yet.</p>') if filters else ''
     body = f"""
 <main id="main" class="shell detail sl-detail">
   <a class="back-link" href="index.html#districts">{ARROW} All Sri Lanka districts</a>
@@ -183,9 +212,9 @@ def district_page(site, districts, i):
     <p class="detail-country">{PIN}{escape(d["province"])} Province</p>
   </div>
   <section aria-labelledby="gallery-title">
-    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p>{len(photos)} {'photo' if len(photos) == 1 else 'photos'}</p></div>
+    <div class="gallery-heading"><h2 id="gallery-title">Photo gallery</h2><p{status_attrs}>{len(photos)} {'photo' if len(photos) == 1 else 'photos'}</p></div>{controls}
     {note}
-    {rendered_photos}
+    {rendered_photos}{empty}
   </section>
   <nav class="trip-nav" aria-label="Browse districts">
     {district_link(districts[i-1] if i else None, 'Previous district', 'previous')}
@@ -200,7 +229,7 @@ def district_page(site, districts, i):
     </div>
   </dialog>
 </main>"""
-    return layout(site, f'{d["name"]} | Sri Lanka', f'{d["name"]} district photo gallery, Sri Lanka.', body, True)
+    return layout(site, f'{d["name"]} | Sri Lanka', f'{d["name"]} district photo gallery, Sri Lanka.', body, True, bool(filters))
 
 def validate_photo(photo, missing):
     path = photo["file"]

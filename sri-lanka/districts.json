@@ -14,19 +14,159 @@
         {
           "name": "Colombo",
           "slug": "colombo",
-          "visible": false,
+          "visible": true,
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/coast.jpg",
-              "place": "Tropical coastline"
+              "file": "photos/sri-lanka/Colombo/Tourist places/Galle face beach/1.jpeg",
+              "place": "Galle Face Beach - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "galle-face-beach"
             },
             {
-              "file": "assets/sri-lanka-samples/lagoon.jpg",
-              "place": "Lagoon and mangroves"
+              "file": "photos/sri-lanka/Colombo/Tourist places/Galle face beach/2.jpeg",
+              "place": "Galle Face Beach - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "galle-face-beach"
             },
             {
-              "file": "assets/sri-lanka-samples/fort.jpg",
-              "place": "Coastal fort"
+              "file": "photos/sri-lanka/Colombo/Tourist places/Galle face beach/3.jpeg",
+              "place": "Galle Face Beach - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "galle-face-beach"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Galle face beach/4.jpeg",
+              "place": "Galle Face Beach - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "galle-face-beach"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Galle face beach/5.jpeg",
+              "place": "Galle Face Beach - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "galle-face-beach"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Galle face beach/6.jpeg",
+              "place": "Galle Face Beach - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "galle-face-beach"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Mount Lavina beach/1.jpeg",
+              "place": "Mount Lavinia Beach - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "mount-lavinia-beach"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Mount Lavina beach/2.jpeg",
+              "place": "Mount Lavinia Beach - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "mount-lavinia-beach"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Leisure World/1.jpeg",
+              "place": "Leisure World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "leisure-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Leisure World/2.jpeg",
+              "place": "Leisure World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "leisure-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Leisure World/3.jpeg",
+              "place": "Leisure World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "leisure-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Leisure World/4.jpeg",
+              "place": "Leisure World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "leisure-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Leisure World/5.jpeg",
+              "place": "Leisure World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "leisure-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Leisure World/6.jpeg",
+              "place": "Leisure World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "leisure-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Leisure World/7.jpeg",
+              "place": "Leisure World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "leisure-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Temple/Ponnambalaneshwaram temple.jpeg",
+              "place": "Ponnambalaneshwaram Temple - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "temple"
+            }
+          ],
+          "gallery_filters": [
+            {
+              "id": "tourist-places",
+              "label": "Tourist Places",
+              "subfilters": [
+                {
+                  "id": "galle-face-beach",
+                  "label": "Galle Face Beach"
+                },
+                {
+                  "id": "havelock-city-mall",
+                  "label": "Havelock City Mall"
+                },
+                {
+                  "id": "one-galle-face-mall",
+                  "label": "One Galle Face Mall"
+                },
+                {
+                  "id": "mount-lavinia-beach",
+                  "label": "Mount Lavinia Beach"
+                },
+                {
+                  "id": "leisure-world",
+                  "label": "Leisure World"
+                },
+                {
+                  "id": "temple",
+                  "label": "Temple"
+                }
+              ]
+            },
+            {
+              "id": "celebration",
+              "label": "Celebration"
+            },
+            {
+              "id": "university",
+              "label": "University"
             }
           ]
         },
