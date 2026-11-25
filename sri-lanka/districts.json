@@ -984,15 +984,32 @@
         {
           "name": "Moneragala",
           "slug": "moneragala",
-          "visible": false,
+          "visible": true,
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/rice-fields.jpg",
-              "place": "Rice fields"
+              "file": "photos/sri-lanka/Moneragalle/Kataragama 1.jpeg",
+              "place": "Kataragama",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/waterfall.jpg",
-              "place": "Forest waterfall"
+              "file": "photos/sri-lanka/Moneragalle/Kataragama 2.jpeg",
+              "place": "Kataragama",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Sella kataragama 1.jpeg",
+              "place": "Sella Kataragama",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Sella kataragama 2.jpeg",
+              "place": "Sella Kataragama",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Sella kataragama 3.jpeg",
+              "place": "Sella Kataragama",
+              "detect_extension": true
             }
           ]
         }
