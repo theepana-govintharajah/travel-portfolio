@@ -226,7 +226,12 @@
               "place": "People’s Bank Holiday Home, Kandy",
               "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Kandy/cover image.jpeg",
+            "place": "Kandy district cover",
+            "detect_extension": true
+          }
         },
         {
           "name": "Matale",
@@ -292,14 +297,31 @@
           "slug": "matara",
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/coast.jpg",
-              "place": "Tropical coastline"
+              "file": "photos/sri-lanka/Matara/Devi Nuwera Vihara.jpeg",
+              "place": "Devi Nuwera Vihara",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/fort.jpg",
-              "place": "Coastal fort"
+              "file": "photos/sri-lanka/Matara/Devi Nuwera Vishnu Temple.jpeg",
+              "place": "Devi Nuwera Vishnu Temple",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Matara/Beach.jpeg",
+              "place": "Beach",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Matara/Beach 2.jpeg",
+              "place": "Beach",
+              "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Matara/cover image.jpeg",
+            "place": "Matara district cover",
+            "detect_extension": true
+          }
         },
         {
           "name": "Hambantota",
