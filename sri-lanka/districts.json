@@ -34,12 +34,184 @@
           "slug": "gampaha",
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/lagoon.jpg",
-              "place": "Lagoon and mangroves"
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 1.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/rice-fields.jpg",
-              "place": "Rice fields"
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 2.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 3.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 4.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 5.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 6.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 7.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 8.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 9.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 10.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 11.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 12.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 13.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 14.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 15.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 16.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 17.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 18.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Henerathgoda Botanical garden 19.jpeg",
+              "place": "Henerathgoda Botanical Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 1.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 2.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 3.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 4.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 5.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 6.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 7.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 8.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 9.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 10.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 11.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/Kelaniya water world 12.jpeg",
+              "place": "Water World, Kelaniya",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/negombo beach hotel 1.jpeg",
+              "place": "Negombo Beach Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/negombo beach hotel 2.jpeg",
+              "place": "Negombo Beach Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/negombo beach hotel 3.jpeg",
+              "place": "Negombo Beach Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/negombo beach hotel 4.jpeg",
+              "place": "Negombo Beach Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Gampaha/negombo beach hotel 5.jpeg",
+              "place": "Negombo Beach Hotel",
+              "detect_extension": true
             }
           ]
         },
