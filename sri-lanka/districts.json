@@ -893,6 +893,86 @@
               "category": "celebration",
               "subcategory": "birthday",
               "detail": "2024"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/1.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/2.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/3.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/4.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/5.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/6.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/7.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/8.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/9.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Celebration/Birthday/2023/10.jpeg",
+              "place": "Birthday 2023 - Colombo",
+              "detect_extension": true,
+              "category": "celebration",
+              "subcategory": "birthday",
+              "detail": "2023"
             }
           ],
           "gallery_filters": [
@@ -954,6 +1034,10 @@
                   "id": "birthday",
                   "label": "Birthday",
                   "subfilters": [
+                    {
+                      "id": "2023",
+                      "label": "2023"
+                    },
                     {
                       "id": "2024",
                       "label": "2024"
@@ -2144,19 +2228,17 @@
         {
           "name": "Jaffna",
           "slug": "jaffna",
-          "visible": false,
+          "visible": true,
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/kovil.jpg",
-              "place": "Kovil architecture"
+              "file": "photos/sri-lanka/Jaffna/Rio Ice cream 1.jpeg",
+              "place": "Rio Ice Cream - Jaffna",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/fort.jpg",
-              "place": "Coastal fort"
-            },
-            {
-              "file": "assets/sri-lanka-samples/lagoon.jpg",
-              "place": "Lagoon and mangroves"
+              "file": "photos/sri-lanka/Jaffna/Rio ice cream 2.jpeg",
+              "place": "Rio Ice Cream - Jaffna",
+              "detect_extension": true
             }
           ]
         },
