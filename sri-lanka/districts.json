@@ -48,14 +48,116 @@
           "slug": "kalutara",
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/coast.jpg",
-              "place": "Tropical coastline"
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 1.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/waterfall.jpg",
-              "place": "Forest waterfall"
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 2.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 3.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 4.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 5.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 6.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 7.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 8.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 9.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Beruwela Hotel 10.jpeg",
+              "place": "Beruwela Hotel",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Richmond castle 1.jpeg",
+              "place": "Richmond Castle",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Richmond castle 2.jpeg",
+              "place": "Richmond Castle",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Richmond castle 3.jpeg",
+              "place": "Richmond Castle",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Richmond castle 4.jpeg",
+              "place": "Richmond Castle",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Richmond castle 5.jpeg",
+              "place": "Richmond Castle",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Brief garden 1.jpeg",
+              "place": "Brief Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Brief garden 2.jpeg",
+              "place": "Brief Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Brief garden 3.jpeg",
+              "place": "Brief Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Brief garden 4.jpeg",
+              "place": "Brief Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Brief garden 5.jpeg",
+              "place": "Brief Garden",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Kalutara/Brief garden 6.jpeg",
+              "place": "Brief Garden",
+              "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Kalutara/Cover image.jpg",
+            "place": "Kalutara",
+            "detect_extension": true
+          }
         }
       ]
     },
