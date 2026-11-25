@@ -1010,8 +1010,23 @@
               "file": "photos/sri-lanka/Moneragalle/Sella kataragama 3.jpeg",
               "place": "Sella Kataragama",
               "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Elumalayan 1.jpeg",
+              "place": "Elumalayan",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Moneragalle/Elumalayan 2.jpeg",
+              "place": "Elumalayan",
+              "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Moneragalle/cover image.jpeg",
+            "place": "Moneragala",
+            "detect_extension": true
+          }
         }
       ]
     },
