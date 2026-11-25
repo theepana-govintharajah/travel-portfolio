@@ -358,6 +358,118 @@
               "detect_extension": true,
               "category": "tourist-places",
               "subcategory": "aluthkada"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Lotus tower/1.jpeg",
+              "place": "Lotus Tower - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "lotus-tower"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Lotus tower/2.jpeg",
+              "place": "Lotus Tower - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "lotus-tower"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Lotus tower/3.jpeg",
+              "place": "Lotus Tower - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "lotus-tower"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Lotus tower/4.jpeg",
+              "place": "Lotus Tower - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "lotus-tower"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Lotus tower/5.jpeg",
+              "place": "Lotus Tower - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "lotus-tower"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Lotus tower/6.jpeg",
+              "place": "Lotus Tower - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "lotus-tower"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Lotus tower/7.jpeg",
+              "place": "Lotus Tower - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "lotus-tower"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Lotus tower/8.jpeg",
+              "place": "Lotus Tower - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "lotus-tower"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Excel world/1.jpeg",
+              "place": "Excel World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "excel-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Excel world/2.jpeg",
+              "place": "Excel World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "excel-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Excel world/3.jpeg",
+              "place": "Excel World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "excel-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Excel world/4.jpeg",
+              "place": "Excel World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "excel-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Excel world/5.jpeg",
+              "place": "Excel World - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "excel-world"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Rathmalana Airplane Exhibition/1.jpeg",
+              "place": "Ratmalana Airplane Exhibition - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "ratmalana-airplane-exhibition"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Rathmalana Airplane Exhibition/2.jpeg",
+              "place": "Ratmalana Airplane Exhibition - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "ratmalana-airplane-exhibition"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/Tourist places/Rathmalana Airplane Exhibition/3.jpeg",
+              "place": "Ratmalana Airplane Exhibition - Colombo",
+              "detect_extension": true,
+              "category": "tourist-places",
+              "subcategory": "ratmalana-airplane-exhibition"
             }
           ],
           "gallery_filters": [
@@ -392,6 +504,18 @@
                 {
                   "id": "aluthkada",
                   "label": "Aluthkada"
+                },
+                {
+                  "id": "lotus-tower",
+                  "label": "Lotus Tower"
+                },
+                {
+                  "id": "excel-world",
+                  "label": "Excel World"
+                },
+                {
+                  "id": "ratmalana-airplane-exhibition",
+                  "label": "Ratmalana Airplane Exhibition"
                 }
               ]
             },
