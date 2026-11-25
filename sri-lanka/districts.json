@@ -841,6 +841,26 @@
               "file": "photos/sri-lanka/Galle/Madu Ganga River Safari - Fish massage 3.jpeg",
               "place": "Fish Massage · Madu Ganga River Safari",
               "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Japanese peace pagoda 1.jpeg",
+              "place": "Japanese Peace Pagoda - Rumassala - Galle",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Japanese peace pagoda 2.jpeg",
+              "place": "Japanese Peace Pagoda - Rumassala - Galle",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Japanese peace pagoda 3.jpeg",
+              "place": "Japanese Peace Pagoda - Rumassala - Galle",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Japanese peace pagoda 4.jpeg",
+              "place": "Japanese Peace Pagoda - Rumassala - Galle",
+              "detect_extension": true
             }
           ],
           "cover": {
@@ -860,7 +880,22 @@
               "detect_extension": true
             },
             {
+              "file": "photos/sri-lanka/Matara/Devi Nuwera Vihara 2.jpeg",
+              "place": "Devi Nuwera Vihara",
+              "detect_extension": true
+            },
+            {
               "file": "photos/sri-lanka/Matara/Devi Nuwera Vishnu Temple.jpeg",
+              "place": "Devi Nuwera Vishnu Temple",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Matara/Devi Nuwera Vishnu Temple 2.jpeg",
+              "place": "Devi Nuwera Vishnu Temple",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Matara/Devi Nuwera Vishnu Temple 3.jpeg",
               "place": "Devi Nuwera Vishnu Temple",
               "detect_extension": true
             },
@@ -872,6 +907,21 @@
             {
               "file": "photos/sri-lanka/Matara/Beach 2.jpeg",
               "place": "Beach",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Matara/Peoples bank holiday home - bach view 1.jpeg",
+              "place": "People’s Bank Holiday Home - Beach View - Matara",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Matara/Peoples bank holiday home - bach view 2.jpeg",
+              "place": "People’s Bank Holiday Home - Beach View - Matara",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Matara/Peoples bank holiday home - bach view 3.jpeg",
+              "place": "People’s Bank Holiday Home - Beach View - Matara",
               "detect_extension": true
             }
           ],
