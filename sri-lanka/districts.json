@@ -2480,19 +2480,67 @@
         {
           "name": "Badulla",
           "slug": "badulla",
-          "visible": false,
+          "visible": true,
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/tea-hills.jpg",
-              "place": "Tea-covered hills"
+              "file": "photos/sri-lanka/Badulla/Ella Riailway station.jpeg",
+              "place": "Ella Railway Station - Ella - Badulla",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/waterfall.jpg",
-              "place": "Forest waterfall"
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 1.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/rice-fields.jpg",
-              "place": "Rice fields"
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 2.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 3.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 4.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 5.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 6.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 7.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 8.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 9.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 10.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Badulla/Mahamevnawa Buddhist Monastery – Kumbalwela 11.jpeg",
+              "place": "Mahamevnawa Buddhist Monastery - Kumbalwela - Badulla",
+              "detect_extension": true
             }
           ]
         },
