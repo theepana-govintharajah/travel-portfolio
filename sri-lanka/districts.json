@@ -631,6 +631,132 @@
               "detect_extension": true,
               "category": "university",
               "subcategory": "drama"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/1.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/2.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/3.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/4.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/5.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/6.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/7.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/8.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/9.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/10.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/11.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/12.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/13.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/14.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/15.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/16.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/17.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
+            },
+            {
+              "file": "photos/sri-lanka/Colombo/university/Convocation/18.jpeg",
+              "place": "University Convocation - Colombo",
+              "detect_extension": true,
+              "category": "university",
+              "subcategory": "convocation"
             }
           ],
           "gallery_filters": [
@@ -695,6 +821,10 @@
                 {
                   "id": "drama",
                   "label": "Drama"
+                },
+                {
+                  "id": "convocation",
+                  "label": "Convocation"
                 }
               ]
             }
