@@ -1260,7 +1260,12 @@
               "place": "Negombo Beach Hotel - Negombo - Gampaha",
               "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Gampaha/cover image.jpeg",
+            "place": "Gampaha district cover",
+            "detect_extension": true
+          }
         },
         {
           "name": "Kalutara",
@@ -2355,7 +2360,12 @@
               "place": "Hotel",
               "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/baticalo/cover image.jpeg",
+            "place": "Batticaloa district cover",
+            "detect_extension": true
+          }
         },
         {
           "name": "Ampara",
