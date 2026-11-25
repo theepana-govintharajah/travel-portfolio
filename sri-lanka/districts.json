@@ -381,18 +381,101 @@
           "slug": "galle",
           "photos": [
             {
-              "file": "assets/sri-lanka-samples/fort.jpg",
-              "place": "Coastal fort"
+              "file": "photos/sri-lanka/Galle/Galle beach 1.jpeg",
+              "place": "Galle Beach",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/coast.jpg",
-              "place": "Tropical coastline"
+              "file": "photos/sri-lanka/Galle/Galle Beach 2.jpeg",
+              "place": "Galle Beach",
+              "detect_extension": true
             },
             {
-              "file": "assets/sri-lanka-samples/lagoon.jpg",
-              "place": "Lagoon and mangroves"
+              "file": "photos/sri-lanka/Galle/Galle Fort.jpeg",
+              "place": "Galle Fort",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Galle fort 2.jpeg",
+              "place": "Galle Fort",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari 1.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari 2.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari 3.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari  4.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari  5.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari  6.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari  7.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari  8.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari  9.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari  10.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari  11.jpeg",
+              "place": "Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari - Fish massage 1.jpeg",
+              "place": "Fish Massage · Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari - Fish massage 2.jpeg",
+              "place": "Fish Massage · Madu Ganga River Safari",
+              "detect_extension": true
+            },
+            {
+              "file": "photos/sri-lanka/Galle/Madu Ganga River Safari - Fish massage 3.jpeg",
+              "place": "Fish Massage · Madu Ganga River Safari",
+              "detect_extension": true
             }
-          ]
+          ],
+          "cover": {
+            "file": "photos/sri-lanka/Galle/cover image.jpeg",
+            "place": "Galle",
+            "detect_extension": true
+          }
         },
         {
           "name": "Matara",
